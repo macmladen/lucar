@@ -1,7 +1,29 @@
-// Import the initialization partial.
-@import "init";
+// This is merging of H5BP and Zen grids with addition of John Albin _normalize.css
+// H5BP by Nicolas Gallagher, Paul Irish, and Divya Manian -- https://html5boilerplate.com/
+// Zen Grids        by John Albin  -- http://zengrids.com/
+// _normalize.scss  by John Albin  -- https://github.com/JohnAlbin/normalize-scss/
 
-// Aggregate all the stylesheets into one file.
-@import "base-elements";
-@import "layouts";
-@import "components";
+// Gem helpers
+@import "compass";
+@import "breakpoints";
+
+// Zen grids modules.
+@import "zen-grids";
+@import "zen-grids/background";
+@import "zen-grids/flow";
+
+// Abstractions, does not generate any code
+@import "abstractions/visually-hidden";
+
+// Various variables
+@import "variables/init";
+
+// Base styling, applies to HTML elements, sets defaults
+@import "base/normalize";
+@import "base/layouts";
+@import "base/base-elements";
+@import "base/main";
+@import "base/drupal_common";
+
+// Component styling, override for blocks, pages
+@import "components/components";

@@ -22,11 +22,3 @@ $zen-auto-include-grid-item-base  : false;
 $base-font-size                   : 16px;
 $base-line-height                 : 1.5em;
 $vertical-rhythm                  : 1rem*($base-line-height/1em);
-
-//
-// Import our modules.
-//
-@import "zen-grids";
-@import "zen-grids/background";
-@import "zen-grids/flow";
-@import "visually-hidden";
