@@ -1,15 +1,43 @@
 /**
- * @file
- * Base HTML element styles.
- */
+* @file
+* Base HTML element styles.
+*/
 
-html {
-  font-size:   $base-font-size;
-  line-height: $base-line-height;
+/* h5bp
+* Remove text-shadow in selection highlight:
+* https://twitter.com/miketaylr/status/12228805301
+*
+* These selection rule sets have to be separate.
+* Customize the background color to match your design.
+*/
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
 body {
-  margin: 0;
 }
 
 h1,
@@ -20,3 +48,8 @@ p {
     bottom: $vertical-rhythm;
   }
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab";
+}
+

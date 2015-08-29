@@ -1,0 +1,26 @@
+// Breakpoints
+$mobile  : 400px;   // 1 col  min-width 240, fluid until 400px width
+$tablet  : 768px;   // 2 cols hybrid 400 until 768         --  77 | 191 - 20 - 191 - 20 - 191 | 77
+$laptop  : 1024px;  // 3 cols flexible 10-80-10 until 1280 -- 128 | 328 - 20 - 328 - 20 - 328 | 128
+$desktop : 1366px;  // 3 cols hybrid 1280 after 1280
+
+// Responsive scenarios:
+//
+// 1 col  min-width 240, fluid until 400px width
+// 2 cols hybrid 400 until 768
+// 3 cols hybrid 768 until 1024
+// 3 cols hybrid 1024 until 1280 ?
+// 3 cols hybrid 1280 after 1280
+
+// 3x191 +20+20 = 613   for 10-80-10 => 768
+// 3x200 +20+20 = 640   for 10-80-10 =  800
+// 3x328 +20+20 = 1024  for 10-80-10 =  1280
+// 3x351 +20+20 = 1093  for 10-80-10 =  1366,25
+// 3x400 +20+20 = 1240  for 10-80-10 => 1550
+// 3x442 +20+20 = 1366  for 10-80-10 =  1707,5
+
+// Fixed
+// Fluid
+// Liquid
+// Elastic
+// Hybrid

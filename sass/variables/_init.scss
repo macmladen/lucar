@@ -8,7 +8,7 @@
 $browser-minimum-versions: (
   'chrome':  null,
   'firefox': null,
-  'ie':      "8",
+  'ie':      "9",
   'safari':  null,
   'opera':   null
 );
@@ -17,8 +17,9 @@ $browser-minimum-versions: (
 $zen-columns                      : 1;
 $zen-gutters                      : 20px;
 $zen-auto-include-grid-item-base  : false;
+// DEBUG! Remember to turn off!
+$display-zen-grid-background      : false;
 
-// Set up a unit of vertical rhythm.
-$base-font-size                   : 16px;
-$base-line-height                 : 1.5em;
-$vertical-rhythm                  : 1rem*($base-line-height/1em);
+// Normalize.scss settings
+$strict-normalize                 : true !default;
+$box-sizing-polyfill-path         : 'boxsizing.htc';

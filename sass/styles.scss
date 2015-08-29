@@ -3,27 +3,34 @@
 // Zen Grids        by John Albin  -- http://zengrids.com/
 // _normalize.scss  by John Albin  -- https://github.com/JohnAlbin/normalize-scss/
 
-// Gem helpers
-@import "compass";
-@import "breakpoint";
+@import
+  // Gem helpers
+"compass",
+"breakpoint",
 
 // Zen grids modules.
-@import "zen-grids";
-@import "zen-grids/background";
-@import "zen-grids/flow";
+"zen-grids",
+"zen-grids/background",
+"zen-grids/flow",
 
 // Abstractions, does not generate any code
-@import "abstractions/visually-hidden";
+"abstractions/visually-hidden",
 
 // Various variables
-@import "variables/init";
+"variables/init",
+"variables/colors",
+"variables/typography",
+"variables/layout",
 
 // Base styling, applies to HTML elements, sets defaults
-@import "base/normalize";
-@import "base/layouts";
-@import "base/base-elements";
-@import "base/main";
-@import "base/drupal_common";
+"base/normalize",
+"base/helper-classes",
+"base/base-elements",
+"base/layouts",
+"base/drupal-common",
 
 // Component styling, override for blocks, pages
-@import "components/components";
+"components/components",
+
+// Print, last but not least
+"base/print";
