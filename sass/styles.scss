@@ -27,10 +27,13 @@
 "base/helper-classes",
 "base/base-elements",
 "base/layouts",
-"base/drupal-common",
 
-// Component styling, override for blocks, pages
+  // Component styling, override for blocks, pages
+"components/drupal-common",
+"components/drupal-menu",
 "components/components",
+
+"hacks",
 
 // Print, last but not least
 "base/print";
