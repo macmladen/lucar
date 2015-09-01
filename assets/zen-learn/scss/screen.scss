@@ -1,0 +1,70 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+//
+// @file
+// This file sets up all our variables and loads all the modules we need for all
+// generated CSS in this project. To use it, simply: @import "init";
+//
+
+// Supported browsers variable for Compass.
+$browser-minimum-versions: (
+  'chrome':  null,
+  'firefox': null,
+  'ie':      "8",
+  'safari':  null,
+  'opera':   null
+);
+
+// Set up Zen Grids.
+$zen-columns                      : 1;
+$zen-gutters                      : 20px;
+$zen-auto-include-grid-item-base  : false;
+
+// Set up a unit of vertical rhythm.
+$base-font-size                   : 16px;
+$base-line-height                 : 1.5em;
+$vertical-rhythm                  : 1rem*($base-line-height/1em);
+
+//
+// Import our modules.
+//
+@import "zen-grids";
+@import "zen-grids/background";
+@import "zen-grids/flow";
+
+.example-container .block {
+    text-align: center;
+}
+
+$zen-columns: 7; // Set the total number of columns in the grid.
+$zen-gutters: 10px;
+
+.example-container {
+  @include zen-grid-container(); // Apply this mixin to the container.
+}
+.block-a {
+  @include zen-grid-item(3, 3, right);
+  background: #fcc;
+}
+.block-b {
+  @include zen-grid-item(2, 1);
+  background: #cfc;
+}
+.block-c {
+  @include zen-grid-item(2, 6);
+  background: #ccf;
+}
+.block-d {
+ @include zen-new-row(left);
+ @include zen-grid-item(2, 1);
+ background: #ffc;
+}
+.block-e {
+  @include zen-grid-item(2, 6);
+  background: #cff;
+}
