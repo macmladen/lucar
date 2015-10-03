@@ -150,6 +150,13 @@ $zen-columns: 1;
   max-width: $tab-fix;
   margin: 0 auto;
 }
+.l-header {
+  margin-top: 2em;
+}
+.l-nav {
+  display: inline;
+  padding-left: 1em;
+}
 .l-footer {
   background: #000;
   color: #fff;

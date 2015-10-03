@@ -68,3 +68,28 @@ $zen-gutters: 10px;
   @include zen-grid-item(2, 6);
   background: #cff;
 }
+.block-1 {
+  @include zen-new-row();
+  background: #fcf;
+  min-height: 4em;
+  padding: 2em;
+  p {
+    background: #add;
+    padding: 2em;
+    position: relative;
+    text-align: left;
+    max-width: 4em;
+    &:before {
+      content: '<1b';
+      background: #dad;
+      padding: 2em;
+      //position: absolute;
+    }
+    &:after {
+      content: '1a>';
+      background: #dda;
+      padding: 2em;
+      //position: absolute;
+    }
+  }
+}

@@ -61,3 +61,14 @@ img {
   margin: 0 auto;
   height: 100%;
 }
+a,
+a:visited {
+  color: $text-black;
+  text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+  background: $lucar-blue;
+  color: $bg-white;
+}

@@ -1,14 +1,18 @@
 // Set up a unit of vertical rhythm.
-$base-font-size                   : 16px;
-//$base-line-height                 : 1.5em;  // em conflicts with normalize px measures
-$base-line-height                 : 24px;  // 1.5em
-$rhythm-unit                      : 'em' !default;
-//$vertical-rhythm                  : 1rem*($base-line-height/1em);
-$vertical-rhythm                  : 1.5rem;
+$base-font-size       : 16px;
+//$base-line-height     : 1.5em;  // em conflicts with normalize px measures
+$base-line-height     : 24px;  // 1.5em
+$rhythm-unit          : 'em' !default;
+//$vertical-rhythm      : 1rem*($base-line-height/1em);
+$vertical-rhythm      : 1.5rem;
 
 // Font stacks
-$base-font-family                 : "Open Sans", Verdana, Helvetica, sans-serif !default;
-$base-head-family                 : "Roboto Slab", Verdana, Helvetica, sans-serif !default;
+$open-sans            : "Open Sans", Verdana, Helvetica, sans-serif !default;
+$roboto-slab          : "Roboto Slab", Verdana, Helvetica, sans-serif !default;
+
+// Base font
+$base-font-family     : $open-sans;
+$base-head-family     : $roboto-slab;
 
 // The font sizes for h1-h6.
 $h1-font-size: 2    * $base-font-size !default;

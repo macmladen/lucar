@@ -22,7 +22,7 @@ html {
   /* 2 */
   font-size: 16px;
   line-height: 24px;
-  color: #222; }
+  color: #666666; }
 
 /**
  * Remove default margin.
@@ -633,6 +633,17 @@ img {
   margin: 0 auto;
   height: 100%; }
 
+a,
+a:visited {
+  color: #666666;
+  text-decoration: none; }
+
+a:hover,
+a:focus,
+a:active {
+  background: #004875;
+  color: white; }
+
 /**
  * @file
  * Layout styles.
@@ -835,6 +846,13 @@ img {
     display: table; }
   .l-container:after {
     clear: both; }
+
+.l-header {
+  margin-top: 2em; }
+
+.l-nav {
+  display: inline;
+  padding-left: 1em; }
 
 .l-footer {
   background: #000;
@@ -1053,6 +1071,13 @@ ul.secondary a.active {
       padding-left: 0;
       padding-right: 13.33333px;
       margin-right: 6.66667px; } }
+
+/**
+ * @file
+ * Styles for menus and navigation markup.
+ */
+nav a {
+  text-transform: uppercase; }
 
 /**
  * HACKS - These should be moved to their regular role

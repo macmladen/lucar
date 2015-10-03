@@ -6,10 +6,11 @@ $desktop  : 1366px;  // 3 cols hybrid 1280 after 1280
 
 // In mobile first values are shifted
 $mobile   : 240px;   // 1 col  min-width 240, fluid until 400px width
-$tablet   : 400px;   // 2 cols hybrid 400 until 768         --  77 | 191 - 20 - 191 - 20 - 191 | 77
+$tablet   : 400px;   // 2 cols hybrid 400 until 768          --  77 | 191 - 20 - 191 - 20 - 191 | 77
 $laptop   : 768px;   // 3 cols flexible 10-80-10 until 1550  -- 128 | 328 - 20 - 328 - 20 - 328 | 128
-$desktop  : 1550px;  // 3 cols hybrid 1240 after 1550       --  x  | 400 - 20 - 400 - 20 - 400 |  x  -->
+$desktop  : 1550px;  // 3 cols hybrid 1240 after 1550        --  x  | 400 - 20 - 400 - 20 - 400 |  x  -->
 
+// Fixed width for containers
 $tab-fix  : 400px;
 $desk-fix : 1240px;
 
@@ -28,8 +29,9 @@ $desk-fix : 1240px;
 // 3x400 +20+20 = 1240  for 10-80-10 => 1550
 // 3x442 +20+20 = 1366  for 10-80-10 =  1707,5
 
-// Fixed
-// Fluid
+// Responsive Dictionary:
+// Fixed   - fixed width, maybe centered
+// Fluid   - percentage width
 // Liquid
-// Elastic
-// Hybrid
+// Elastic - em based width
+// Hybrid  - having fixed and fluid in same row

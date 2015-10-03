@@ -1,7 +1,7 @@
 //
 // @file
-// This file sets up all our variables and loads all the modules we need for all
-// generated CSS in this project. To use it, simply: @import "init";
+// This file initializes, sets up variables and maps needed for imported gems.
+// It is imported first so it can enable proper gem import and usage.
 //
 
 // Supported browsers variable for Compass.
@@ -17,6 +17,7 @@ $browser-minimum-versions: (
 $zen-columns                      : 1;
 $zen-gutters                      : 20px;
 $zen-auto-include-grid-item-base  : false;
+
 // DEBUG! Remember to turn off!
 $display-zen-grid-background      : false;
 

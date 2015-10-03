@@ -46,12 +46,12 @@ p {
   padding-bottom: 1.5rem;
   max-width: 1111px;
 }
-/* line 45, ../../../../.rvm/gems/ruby-2.2.1/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
+/* line 45, ../../../../../.rvm/gems/ruby-2.2.1/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
 .l-basic:before, .l-basic:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../.rvm/gems/ruby-2.2.1/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
+/* line 50, ../../../../../.rvm/gems/ruby-2.2.1/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
 .l-basic:after {
   clear: both;
 }
@@ -73,6 +73,7 @@ p {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  *behavior: url("not-important");
   *word-wrap: break-word;
 }
 
@@ -84,12 +85,12 @@ p {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 45, ../../../../.rvm/gems/ruby-2.2.1/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
+/* line 45, ../../../../../.rvm/gems/ruby-2.2.1/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
 .l-basic__main:before, .l-basic__main:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../.rvm/gems/ruby-2.2.1/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
+/* line 50, ../../../../../.rvm/gems/ruby-2.2.1/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
 .l-basic__main:after {
   clear: both;
 }
@@ -160,12 +161,12 @@ p {
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 45, ../../../../.rvm/gems/ruby-2.2.1/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
+  /* line 45, ../../../../../.rvm/gems/ruby-2.2.1/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
   .l-basic__columns:before, .l-basic__columns:after {
     content: "";
     display: table;
   }
-  /* line 50, ../../../../.rvm/gems/ruby-2.2.1/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
+  /* line 50, ../../../../../.rvm/gems/ruby-2.2.1/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
   .l-basic__columns:after {
     clear: both;
   }
@@ -179,6 +180,7 @@ p {
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
+    *behavior: url("not-important");
     *word-wrap: break-word;
     margin-top: 0;
     margin-bottom: 0;
@@ -391,6 +393,7 @@ p {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  *behavior: url("not-important");
   *word-wrap: break-word;
   width: 50%;
   padding-left: 0;
@@ -408,6 +411,7 @@ p {
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
+    *behavior: url("not-important");
     *word-wrap: break-word;
     width: 33.33333%;
     padding-left: 0;
