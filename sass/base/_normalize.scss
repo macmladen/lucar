@@ -48,9 +48,9 @@
 //$indent-amount: 40px !default;
 
 // After the default variables are set, import the required Compass partials.
-//@import "compass/support";
-//@import "compass/css3/box-sizing";
-//@import "compass/typography/vertical_rhythm";
+@import "compass/support";
+@import "compass/css3/box-sizing";
+@import "compass/typography/vertical_rhythm";
 
 
 @if not $strict-normalize or support-legacy-browser(ie, "7") {
@@ -79,6 +79,12 @@ html {
   font-size:   $base-font-size;
   line-height: $base-line-height;
   color: $text-black;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 /**

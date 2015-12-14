@@ -151,19 +151,44 @@ $zen-columns: 1;
   margin: 0 auto;
 }
 .l-header {
-  margin-top: 2em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 1em 0;
+  background: white;
 }
 .l-nav {
   display: inline;
   padding-left: 1em;
 }
+.l-main {
+  margin-top: 40em;
+  background: hsla(0, 0, 100%, 0.75);
+}
+.l-container {
+}
 .l-footer {
   background: #000;
   color: #fff;
+}
+.l-copyright {
+  text-align: center;
 }
 @include breakpoint ($laptop) {
   .l-container {
     max-width: none;
     width: 80%;
+  }
+}
+
+// Desktop
+@include breakpoint ($laptop) {
+  .l-lead_block {
+    width: 33%;
+    float: left;
+    padding: 0 5px;
+  }
+  .l-services {
+
   }
 }
