@@ -36,10 +36,9 @@
    Author's custom styles
    ========================================================================== */
 
-
 body {
+  background: url('../images/porsche_bg.png') center center/cover fixed;
 }
-
 h1,
 h2,
 p {
@@ -48,11 +47,9 @@ p {
     bottom: $vertical-rhythm;
   }
 }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: $base-head-family;
 }
-
 h1 {
   text-align: center;
 }
