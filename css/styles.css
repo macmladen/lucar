@@ -887,6 +887,17 @@ a:active {
 .l-company_info {
 }
 
+.new_address {
+  text-align: center;
+  margin-bottom: 0;
+  padding: 24px;
+  background: #00476c;
+  color: #ddd;
+}
+.new_address a {
+  color: #fff;
+  font-weight: 700;
+}
 @media (min-width: 768px) {
   .l-container {
     max-width: none;
