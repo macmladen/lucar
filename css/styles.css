@@ -877,17 +877,48 @@ a:active {
   color: #fff; }
 
 .l-copyright {
-  text-align: center; }
+  text-align: center;
+}
 
+.l-company_address {
+  padding-top: 24px;
+}
+
+.l-company_info {
+}
+
+.new_address {
+  text-align: center;
+  margin-bottom: 0;
+  padding: 24px;
+  background: #00476c;
+  color: #ddd;
+}
+.new_address a {
+  color: #fff;
+  font-weight: 700;
+}
 @media (min-width: 768px) {
   .l-container {
     max-width: none;
-    width: 80%; } }
-@media (min-width: 768px) {
+    width: 80%; }
   .l-lead_block {
     width: 33%;
     float: left;
-    padding: 0 5px; } }
+    padding: 0 5px; }
+  .l-copyright {
+    width: 100%;
+    float: left;
+  }
+  .l-company_address {
+    float: right;
+    width: 65%;
+  }
+  .l-company_info {
+    float: left;
+    width: 33%;
+  }
+}
 /*--#  DRUPAL COMMON STYLES  #--*/
 /*-- Page elements --*/
 /*-- Node elements --*/
