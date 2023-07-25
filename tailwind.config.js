@@ -1,20 +1,19 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require('tailwindcss/defaultTheme')
 
-/** @type {import('tailwindcss').Config} */
+/** @type {import("tailwindcss").Config} */
 module.exports = {
-  content: [
-    './src/app/**/*.{js,ts,jsx,tsx}',
-    './src/pages/**/*.{js,ts,jsx,tsx}',
-    './src/components/**/*.{js,ts,jsx,tsx}',
-  ],
+  darkMode: 'class',
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     container: {
+      center: true,
       screens: {
+        '2xl': '1400px',
         // hd: '1920px'
       },
       padding: {
         // DEFAULT: '4vmin'
-      }
+      },
     },
     extend: {
       screens: {
@@ -24,12 +23,12 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         'lucar-blue': '#00476c',
-        'lucar-gray': '##949491',
+        'lucar-gray': '#949491',
         'ui-red': '#db3939',
         'grey-dark': '#2c2c2c',
         'grey-base': '#aeaeae',
         'grey-light': '#fcfcfc',
-        'shades-white': 'rgba(255, 255, 255, 0.4)'
+        'shades-white': 'rgba(255, 255, 255, 0.4)',
       },
       fontFamily: {
         sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
@@ -37,9 +36,12 @@ module.exports = {
       },
       fontSize: {
         base: ['1.125rem', '1.3'],
-        small: ['0.75rem', '1.25']
-      }
-    }
+        small: ['0.75rem', '1.25'],
+      },
+    },
   },
-  plugins: []
-};
+  plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],
+  corePlugins: {
+    // preflight: false,
+  },
+}
