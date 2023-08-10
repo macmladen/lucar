@@ -38,6 +38,14 @@ module.exports = {
         base: ['1.125rem', '1.3'],
         small: ['0.75rem', '1.25'],
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: '65ch',
+            // maxWidth: '1260px',
+          },
+        },
+      },
     },
   },
   plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],
