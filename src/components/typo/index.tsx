@@ -1,8 +1,8 @@
-export default function Home() {
+export default function Typo() {
   return (
     <article>
       <div className='relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-8 lg:py-12'>
-        <div className='absolute inset-0 bg-[url(/img/grid.svg)] bg-top [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]'></div>
+        <div className='absolute inset-0  bg-top [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]'></div>
         <div className='relative w-full bg-white px-6 py-12 shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5 md:mx-auto md:max-w-3xl lg:max-w-4xl lg:pb-28 lg:pt-16'>
           <div className='mx-auto max-w-prose lg:text-lg'>
             <svg className='h-6' fill='none' viewBox='0 0 297 24'>
@@ -69,15 +69,21 @@ export default function Home() {
             </p>
             <pre>
               <code className='language-html'>
-                &lt;article className="prose"&gt; &lt;h1&gt;Garlic bread with
-                cheese: What the science tells us&lt;/h1&gt; &lt;p&gt; For years
-                parents have espoused the health benefits of eating garlic bread
-                with cheese to their children, with the food earning such an
-                iconic status in our culture that kids will often dress up as
-                warm, cheesy loaf for Halloween. &lt;/p&gt; &lt;p&gt; But a
-                recent study shows that the celebrated appetizer may be linked
-                to a series of rabies cases springing up around the country.
-                &lt;/p&gt; &lt;!-- ... --&gt; &lt;/article&gt;
+                {`
+<article class="prose">
+  <h1>Garlic bread with cheese: What the science tells us</h1>
+  <p>
+    For years parents have espoused the health benefits of eating garlic bread with cheese to their
+    children, with the food earning such an iconic status in our culture that kids will often dress
+    up as warm, cheesy loaf for Halloween.
+  </p>
+  <p>
+    But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
+    springing up around the country.
+  </p>
+  <!-- ... -->
+</article>
+                `}
               </code>
             </pre>
             <p>
@@ -228,7 +234,18 @@ export default function Home() {
               like at the time of writing:
             </p>
             <pre>
-              <code className='language-js'></code>
+              <code className='language-js'>
+                {`
+(module.exports = {
+  purge: [],
+  theme: {
+    extend: {},
+  },
+  variants: {},
+  plugins: [],
+})
+                `}
+              </code>
             </pre>
             <p>Hopefully that looks good enough to you.</p>
             <h3>What about nested lists?</h3>

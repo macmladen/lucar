@@ -1,9 +1,9 @@
-import Typo from '@/app/typo/page'
+import Joke from '@/components/typo/joke'
 
 export default function Home() {
   return (
     <article>
-      <Typo></Typo>
+      <Joke></Joke>
     </article>
   )
 }

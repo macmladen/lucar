@@ -31,8 +31,8 @@ module.exports = {
         'shades-white': 'rgba(255, 255, 255, 0.4)',
       },
       fontFamily: {
-        sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
-        serif: ['Roboto Slab', ...defaultTheme.fontFamily.serif],
+        sans: ['var(--font-open-sans)', ...defaultTheme.fontFamily.sans],
+        serif: ['var(--font-roboto-slab)', ...defaultTheme.fontFamily.serif],
       },
       fontSize: {
         base: ['1.125rem', '1.3'],

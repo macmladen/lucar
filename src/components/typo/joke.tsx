@@ -1,4 +1,4 @@
-export default function Typo() {
+export default function Joke() {
   return (
     <article>
       <h1>Lucar</h1>
