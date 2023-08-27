@@ -48,9 +48,9 @@
 //$indent-amount: 40px !default;
 
 // After the default variables are set, import the required Compass partials.
-@import "compass/support";
-@import "compass/css3/box-sizing";
-@import "compass/typography/vertical_rhythm";
+//@import "compass/support";
+//@import "compass/css3/box-sizing";
+//@import "compass/typography/vertical_rhythm";
 
 
 @if not $strict-normalize or support-legacy-browser(ie, "7") {
@@ -236,9 +236,8 @@ dfn {
 h1 {
   /* Set the font-size and line-height while keeping a proper vertical rhythm. */
   @if not $strict-normalize or support-legacy-browser(ie, "7") {
-    @include adjust-font-size-to( $h1-font-size );
-  }
-  @else {
+    @include adjust-font-size-to($h1-font-size);
+  } @else {
     font-size: if($rhythm-unit == "px", $h1-font-size, ($h1-font-size / $base-font-size)#{$rhythm-unit});
   }
 
@@ -249,31 +248,31 @@ h1 {
 
 @if not $strict-normalize or support-legacy-browser(ie, "7") {
   h2 {
-    @include adjust-font-size-to( $h2-font-size );
+    @include adjust-font-size-to($h2-font-size);
     @include leader(1, $h2-font-size);
     @include trailer(1, $h2-font-size);
   }
 
   h3 {
-    @include adjust-font-size-to( $h3-font-size );
+    @include adjust-font-size-to($h3-font-size);
     @include leader(1, $h3-font-size);
     @include trailer(1, $h3-font-size);
   }
 
   h4 {
-    @include adjust-font-size-to( $h4-font-size );
+    @include adjust-font-size-to($h4-font-size);
     @include leader(1, $h4-font-size);
     @include trailer(1, $h4-font-size);
   }
 
   h5 {
-    @include adjust-font-size-to( $h5-font-size );
+    @include adjust-font-size-to($h5-font-size);
     @include leader(1, $h5-font-size);
     @include trailer(1, $h5-font-size);
   }
 
   h6 {
-    @include adjust-font-size-to( $h6-font-size );
+    @include adjust-font-size-to($h6-font-size);
     @include leader(1, $h6-font-size);
     @include trailer(1, $h6-font-size);
   }

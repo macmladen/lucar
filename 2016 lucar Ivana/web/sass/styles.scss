@@ -5,13 +5,13 @@
 
 @import
   // Gem helpers
-"compass",
-"breakpoint",
+"../node_modules/compass-sass-mixins/lib/compass",
+"../node_modules/breakpoint-sass/stylesheets/breakpoint",
 
 // Zen grids modules.
-"zen-grids",
-"zen-grids/background",
-"zen-grids/flow",
+"../node_modules/zen-grids/sass/zen-grids",
+"../node_modules/zen-grids/sass/zen-grids/background",
+"../node_modules/zen-grids/sass/zen-grids/flow",
 
 // Abstractions, does not generate any code
 "abstractions/visually-hidden",
