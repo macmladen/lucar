@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import { Open_Sans, Roboto_Slab } from 'next/font/google'
 import Header from '@/components/header'
 import React from 'react'
+import Footer from '@/components/footer'
 
 const openSans = Open_Sans({
   subsets: ['latin'],

@@ -1,0 +1,18 @@
+export default function GoogleMap() {
+  return (
+    <section id='map'>
+      <iframe
+        src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8074.81827355288!2d19.82479889875661!3d45.288109743243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDE3JzE3LjIiTiAxOcKwNDknNTEuOSJF!5e0!3m2!1sen!2srs!4v1628582013493!5m2!1sen!2srs'
+        width='100%'
+        height='450'
+        // @ts-ignore
+        style={{
+          border: 0,
+        }}
+        // @ts-ignore
+        allowFullScreen=''
+        loading='lazy'
+      ></iframe>
+    </section>
+  )
+}
