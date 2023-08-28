@@ -1,9 +1,11 @@
 import Joke from '@/components/typo/joke'
+import Carousel from '@/components/carousel'
 
 export default function Home() {
   return (
-    <article>
-      <Joke></Joke>
-    </article>
+    <>
+      <Carousel />
+      <Joke />
+    </>
   )
 }
