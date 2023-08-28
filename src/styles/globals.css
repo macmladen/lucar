@@ -31,5 +31,11 @@
 }
 
 @layer components {
-
+    .lucid {
+        display: inline;
+        margin-left: 1rem;
+        margin-right: .25rem;
+        color: lightgray;
+        height: 20px;
+    }
 }
