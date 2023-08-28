@@ -8,7 +8,7 @@ module.exports = {
     container: {
       center: true,
       screens: {
-        '2xl': '1400px',
+        xl: '1240px',
         // hd: '1920px'
       },
       padding: {
@@ -42,7 +42,7 @@ module.exports = {
         DEFAULT: {
           css: {
             // maxWidth: '65ch',
-            maxWidth: '1260px',
+            maxWidth: '1240px',
           },
         },
       },
