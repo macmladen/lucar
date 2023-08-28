@@ -2,6 +2,7 @@ import { Clock, Mail, MapPin, Phone } from 'lucide-react'
 import Link from 'next/link'
 
 export default function TopSection() {
+  // Keep style, stupid tailwind 'lucide'
   return (
     <section className='bg-lucar-blue p-4 text-sm text-white'>
       <p className='container'>

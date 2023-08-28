@@ -18,7 +18,6 @@ export default function Carousel() {
         }}
         speed={600}
         loop={true}
-        lazy={true}
         pagination={{
           clickable: true,
         }}
