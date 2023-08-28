@@ -32,7 +32,8 @@ export default function RootLayout({
     >
       <body>
         <Header />
-        <main className='prose mx-auto dark:prose-invert'>{children}</main>
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   )

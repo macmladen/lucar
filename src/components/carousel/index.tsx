@@ -9,7 +9,7 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 
 export default function Carousel() {
   return (
-    <>
+    <section id='carousel'>
       <Swiper
         style={{
           //@ts-ignore
@@ -45,7 +45,7 @@ export default function Carousel() {
             alt='Ugradnja i održavanje TNG uređaja'
             loading='lazy'
           />
-          <div className='relative bg-white/70 p-4'>
+          <div className='container relative bg-white/70 p-4'>
             <h2>TNG</h2>
             <p>Ugradnja i održavanje TNG uređaja</p>
           </div>
@@ -64,7 +64,7 @@ export default function Carousel() {
             alt='Ugradnja i održavanje CNG uređaja'
             loading='lazy'
           />
-          <div className='relative bg-white/70 p-4'>
+          <div className='container relative bg-white/70 p-4'>
             <h2>CNG</h2>
             <p>Ugradnja i održavanje CNG uređaja</p>
           </div>
@@ -83,7 +83,7 @@ export default function Carousel() {
             alt='Ugradnja i izrada komarnika'
             loading='lazy'
           />
-          <div className='relative bg-white/70 p-4'>
+          <div className='container relative bg-white/70 p-4'>
             <h2>Komarnici</h2>
             <p>Ugradnja i izrada komarnika</p>
           </div>
@@ -102,7 +102,7 @@ export default function Carousel() {
             alt='Rolo vrata'
             loading='lazy'
           />
-          <div className='relative bg-white/70 p-4'>
+          <div className='container relative bg-white/70 p-4'>
             <h2>Rolo vrata</h2>
             <p>Ugradnja i izrada rolo segmentnih vrata</p>
           </div>
@@ -121,7 +121,7 @@ export default function Carousel() {
             alt='Segmentna vrata'
             loading='lazy'
           />
-          <div className='relative bg-white/70 p-4'>
+          <div className='container relative bg-white/70 p-4'>
             <h2>Segmentna vrata</h2>
             <p>Ugradnja i izrada rolo segmentnih vrata</p>
           </div>
@@ -140,12 +140,12 @@ export default function Carousel() {
             alt='Ugradnja i izrada pergola'
             loading='lazy'
           />
-          <div className='relative bg-white/70 p-4'>
+          <div className='container relative bg-white/70 p-4'>
             <h2>Pergola</h2>
             <p>Ugradnja i izrada pergola</p>
           </div>
         </SwiperSlide>
       </Swiper>
-    </>
+    </section>
   )
 }
