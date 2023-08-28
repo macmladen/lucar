@@ -34,7 +34,8 @@
   "homepage": "https://github.com/macmladen/lucar#readme",
   "dependencies": {
     "@tailwindcss/typography": "^0.5.9",
-    "next": "^13.4.10",
+    "lucide-react": "^0.269.0",
+    "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "swiper": "^10.2.0",
@@ -42,23 +43,23 @@
     "tailwindcss-animate": "^1.0.6"
   },
   "devDependencies": {
-    "@types/node": "^20.4.2",
-    "@types/react": "^18.2.15",
+    "@types/node": "^20.5.7",
+    "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^6.1.0",
-    "autoprefixer": "^10.4.14",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "autoprefixer": "^10.4.15",
     "dotenv": "^16.3.1",
-    "eslint": "^8.45.0",
-    "eslint-config-next": "^13.4.10",
-    "eslint-config-prettier": "^8.8.0",
+    "eslint": "^8.48.0",
+    "eslint-config-next": "^13.4.19",
+    "eslint-config-prettier": "^8.10.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
-    "postcss": "^8.4.26",
+    "postcss": "^8.4.28",
     "postcss-import": "^15.1.0",
-    "prettier": "^3.0.1",
+    "prettier": "^3.0.2",
     "prettier-plugin-organize-imports": "^3.2.3",
     "prettier-plugin-tailwindcss": "^0.4.1",
     "typedoc": "^0.24.8",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   }
 }
