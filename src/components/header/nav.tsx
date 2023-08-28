@@ -30,10 +30,18 @@ export default function NavMenu() {
         </li>
         <li>
           <Link
-            href='/rolo-door'
+            href='/rolo'
             className='hover:text-sky-500 dark:hover:text-sky-400'
           >
             Rolo vrata
+          </Link>
+        </li>
+        <li>
+          <Link
+            href='/segment'
+            className='hover:text-sky-500 dark:hover:text-sky-400'
+          >
+            Segment
           </Link>
         </li>
         <li>
