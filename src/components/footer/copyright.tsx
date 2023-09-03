@@ -1,6 +1,6 @@
 export default function Copyright() {
   return (
-    <section className='bg-lucar-gray p-4 text-white'>
+    <section id='copyright' className='bg-lucar-gray p-4 text-white'>
       <p className='container flex'>
         <span className='font-extrabold'>
           © {new Date().getFullYear()} by Lucar.

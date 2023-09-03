@@ -2,7 +2,10 @@ import Link from 'next/link'
 
 export default function NavMenu() {
   return (
-    <nav className='text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200'>
+    <nav
+      id='main-nav'
+      className='text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200'
+    >
       <ul className='flex space-x-8'>
         <li>
           <Link

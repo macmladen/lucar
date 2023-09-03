@@ -4,7 +4,7 @@ import Bottom from '@/components/footer/bottom'
 
 export default function Footer() {
   return (
-    <footer>
+    <footer id='footer'>
       <Bottom />
       <GoogleMap />
       <Copyright />

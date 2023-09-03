@@ -4,12 +4,12 @@ import TopSection from '@/components/header/top-section'
 
 export default function Header() {
   return (
-    <header className='dark:prose-invert'>
+    <header id='header' className='dark:prose-invert'>
       <TopSection />
-      <div className='container'>
+      <section id='navigation' className='container py-4'>
         <Logo />
         <NavMenu />
-      </div>
+      </section>
     </header>
   )
 }

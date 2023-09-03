@@ -1,6 +1,6 @@
 export default function Bottom() {
   return (
-    <section className='bg-lucar-blue text-white'>
+    <section id='bottom' className='bg-lucar-blue text-white'>
       <div className='container flex gap-5 py-8'>
         <div className='flex-1'>
           <h3>O nama</h3>

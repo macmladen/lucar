@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Logo() {
   return (
-    <div className='flex'>
+    <section id='logo' className='flex'>
       <Link href='/'>
         <Image
           src='/img/lucar_logo.png'
@@ -17,6 +17,6 @@ export default function Logo() {
           alt='We are Lucar'
         />
       </Link>
-    </div>
+    </section>
   )
 }
