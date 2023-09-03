@@ -45,9 +45,9 @@ export default function Carousel() {
             alt='Ugradnja i održavanje TNG uređaja'
             loading='lazy'
           />
-          <div className='container relative bg-white/70 p-4'>
-            <h2>TNG</h2>
-            <p>Ugradnja i održavanje TNG uređaja</p>
+          <div className='container relative bg-white/70 p-8'>
+            <h2 className='pb-8 pt-4 text-6xl font-black'>TNG</h2>
+            <p className='text-2xl'>Ugradnja i održavanje TNG uređaja</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -64,9 +64,9 @@ export default function Carousel() {
             alt='Ugradnja i održavanje CNG uređaja'
             loading='lazy'
           />
-          <div className='container relative bg-white/70 p-4'>
-            <h2>CNG</h2>
-            <p>Ugradnja i održavanje CNG uređaja</p>
+          <div className='container relative bg-white/70 p-8'>
+            <h2 className='pb-8 pt-4 text-6xl font-black'>CNG</h2>
+            <p className='text-2xl'>Ugradnja i održavanje CNG uređaja</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -83,9 +83,9 @@ export default function Carousel() {
             alt='Ugradnja i izrada komarnika'
             loading='lazy'
           />
-          <div className='container relative bg-white/70 p-4'>
-            <h2>Komarnici</h2>
-            <p>Ugradnja i izrada komarnika</p>
+          <div className='container relative bg-white/70 p-8'>
+            <h2 className='pb-8 pt-4 text-6xl font-black'>Komarnici</h2>
+            <p className='text-2xl'>Ugradnja i izrada komarnika</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -102,9 +102,9 @@ export default function Carousel() {
             alt='Rolo vrata'
             loading='lazy'
           />
-          <div className='container relative bg-white/70 p-4'>
-            <h2>Rolo vrata</h2>
-            <p>Ugradnja i izrada rolo segmentnih vrata</p>
+          <div className='container relative bg-white/70 p-8'>
+            <h2 className='pb-8 pt-4 text-6xl font-black'>Rolo vrata</h2>
+            <p className='text-2xl'>Ugradnja i izrada rolo segmentnih vrata</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -121,9 +121,9 @@ export default function Carousel() {
             alt='Segmentna vrata'
             loading='lazy'
           />
-          <div className='container relative bg-white/70 p-4'>
-            <h2>Segmentna vrata</h2>
-            <p>Ugradnja i izrada rolo segmentnih vrata</p>
+          <div className='container relative bg-white/70 p-8'>
+            <h2 className='pb-8 pt-4 text-6xl font-black'>Segmentna vrata</h2>
+            <p className='text-2xl'>Ugradnja i izrada rolo segmentnih vrata</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -140,9 +140,9 @@ export default function Carousel() {
             alt='Ugradnja i izrada pergola'
             loading='lazy'
           />
-          <div className='container relative bg-white/70 p-4'>
-            <h2>Pergola</h2>
-            <p>Ugradnja i izrada pergola</p>
+          <div className='container relative bg-white/70 p-8'>
+            <h2 className='pb-8 pt-4 text-6xl font-black'>Pergola</h2>
+            <p className='text-2xl'>Ugradnja i izrada pergola</p>
           </div>
         </SwiperSlide>
       </Swiper>

@@ -1,7 +1,9 @@
 export default function roloDoor() {
   return (
-    <article>
-      <h1>Rolo</h1>
-    </article>
+    <section id='rolo'>
+      <article className='container prose dark:prose-invert'>
+        <h1>Rolo</h1>
+      </article>
+    </section>
   )
 }

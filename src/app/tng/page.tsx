@@ -1,7 +1,9 @@
 export default function Tng() {
   return (
-    <article>
-      <h1>TNG</h1>
-    </article>
+    <section id='tng'>
+      <article className='container prose dark:prose-invert'>
+        <h1>TNG</h1>
+      </article>
+    </section>
   )
 }

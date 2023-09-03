@@ -1,7 +1,9 @@
 export default function Pergola() {
   return (
-    <article>
-      <h1>Pergola</h1>
-    </article>
+    <section id='pergola'>
+      <article className='container prose dark:prose-invert'>
+        <h1>Pergola</h1>
+      </article>
+    </section>
   )
 }

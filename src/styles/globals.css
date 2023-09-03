@@ -33,9 +33,12 @@
 @layer components {
     .lucide {
         display: inline;
-        margin-left: 1rem;
         margin-right: .25rem;
         color: lightgray;
         height: 20px;
+    }
+
+    .social-icons .lucide {
+        height: inherit;
     }
 }

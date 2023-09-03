@@ -1,7 +1,9 @@
 export default function Cng() {
   return (
-    <article>
-      <h1>Cng</h1>
-    </article>
+    <section id='cng'>
+      <article className='container prose dark:prose-invert'>
+        <h1>Cng</h1>
+      </article>
+    </section>
   )
 }
