@@ -33,6 +33,84 @@ export default function Carousel() {
       >
         <SwiperSlide>
           <Image
+            src='/img/segment/garage-rolo-big-2a.jpg'
+            width={1200}
+            height={675}
+            style={{
+              objectFit: 'cover',
+              width: '100%',
+              height: 'clamp(300px, 50vw, 600px)',
+              position: 'absolute',
+            }}
+            alt='Segmentna vrata'
+            loading='lazy'
+          />
+          <div className='container relative bg-white/70 p-8'>
+            <h2 className='pb-8 pt-4 text-6xl font-black'>Segmentna vrata</h2>
+            <p className='text-2xl'>
+              Ugradnja i izrada segmentnih industrijskih i garažnih vrata
+            </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            src='/img/rolo/garage-rolo-3.jpg'
+            width={1200}
+            height={675}
+            style={{
+              objectFit: 'cover',
+              width: '100%',
+              height: 'clamp(300px, 50vw, 600px)',
+              position: 'absolute',
+            }}
+            alt='Rolo vrata'
+            loading='lazy'
+          />
+          <div className='container relative bg-white/70 p-8'>
+            <h2 className='pb-8 pt-4 text-6xl font-black'>Rolo vrata</h2>
+            <p className='text-2xl'>Ugradnja i izrada rolo vrata</p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            src='/img/pergola/pergola-3a.jpg'
+            width={1200}
+            height={675}
+            style={{
+              objectFit: 'cover',
+              width: '100%',
+              height: 'clamp(300px, 50vw, 600px)',
+              position: 'absolute',
+            }}
+            alt='Ugradnja i izrada pergola'
+            loading='lazy'
+          />
+          <div className='container relative bg-white/70 p-8'>
+            <h2 className='pb-8 pt-4 text-6xl font-black'>Pergola</h2>
+            <p className='text-2xl'>Ugradnja i izrada pergola</p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            src='/img/mosquitonet/mosquito-net-window-2.jpg'
+            width={1200}
+            height={675}
+            style={{
+              objectFit: 'cover',
+              width: '100%',
+              height: 'clamp(300px, 50vw, 600px)',
+              position: 'absolute',
+            }}
+            alt='Ugradnja i izrada komarnika'
+            loading='lazy'
+          />
+          <div className='container relative bg-white/70 p-8'>
+            <h2 className='pb-8 pt-4 text-6xl font-black'>Komarnici</h2>
+            <p className='text-2xl'>Ugradnja i izrada komarnika</p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
             src='/img/tng/tng.jpg'
             width={1200}
             height={675}
@@ -67,82 +145,6 @@ export default function Carousel() {
           <div className='container relative bg-white/70 p-8'>
             <h2 className='pb-8 pt-4 text-6xl font-black'>CNG</h2>
             <p className='text-2xl'>Ugradnja i održavanje CNG uređaja</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src='/img/mosquitonet/mosquito-net-window-2.jpg'
-            width={1200}
-            height={675}
-            style={{
-              objectFit: 'cover',
-              width: '100%',
-              height: 'clamp(300px, 50vw, 600px)',
-              position: 'absolute',
-            }}
-            alt='Ugradnja i izrada komarnika'
-            loading='lazy'
-          />
-          <div className='container relative bg-white/70 p-8'>
-            <h2 className='pb-8 pt-4 text-6xl font-black'>Komarnici</h2>
-            <p className='text-2xl'>Ugradnja i izrada komarnika</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src='/img/rolo/garage-rolo-3.jpg'
-            width={1200}
-            height={675}
-            style={{
-              objectFit: 'cover',
-              width: '100%',
-              height: 'clamp(300px, 50vw, 600px)',
-              position: 'absolute',
-            }}
-            alt='Rolo vrata'
-            loading='lazy'
-          />
-          <div className='container relative bg-white/70 p-8'>
-            <h2 className='pb-8 pt-4 text-6xl font-black'>Rolo vrata</h2>
-            <p className='text-2xl'>Ugradnja i izrada rolo segmentnih vrata</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src='/img/segment/garage-rolo-big-2a.jpg'
-            width={1200}
-            height={675}
-            style={{
-              objectFit: 'cover',
-              width: '100%',
-              height: 'clamp(300px, 50vw, 600px)',
-              position: 'absolute',
-            }}
-            alt='Segmentna vrata'
-            loading='lazy'
-          />
-          <div className='container relative bg-white/70 p-8'>
-            <h2 className='pb-8 pt-4 text-6xl font-black'>Segmentna vrata</h2>
-            <p className='text-2xl'>Ugradnja i izrada rolo segmentnih vrata</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src='/img/pergola/pergola-3a.jpg'
-            width={1200}
-            height={675}
-            style={{
-              objectFit: 'cover',
-              width: '100%',
-              height: 'clamp(300px, 50vw, 600px)',
-              position: 'absolute',
-            }}
-            alt='Ugradnja i izrada pergola'
-            loading='lazy'
-          />
-          <div className='container relative bg-white/70 p-8'>
-            <h2 className='pb-8 pt-4 text-6xl font-black'>Pergola</h2>
-            <p className='text-2xl'>Ugradnja i izrada pergola</p>
           </div>
         </SwiperSlide>
       </Swiper>

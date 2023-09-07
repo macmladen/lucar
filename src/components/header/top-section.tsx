@@ -6,7 +6,7 @@ export default function TopSection() {
     <section id='top-section' className='bg-lucar-blue p-4 text-sm text-white'>
       <p className='container'>
         <span>
-          <Clock /> Ponedeljak – petak 09-19, Subota 09-15
+          <Clock /> Ponedeljak – petak 08-16, Subota 09-14
         </span>
         <span className='ml-4'>
           <Phone /> <a href='tel:+381642446031'>+381642446031</a>,{' '}

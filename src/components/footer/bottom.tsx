@@ -13,12 +13,12 @@ export default function Bottom() {
             <strong>"Lucar" SZTR</strong> je mala porodična firma iz Novog Sada.
           </p>
           <p className='pb-2 text-sm'>
-            Osnovana je 1997. kao servis za ugradnju autogas sistema za
+            Osnovana je 2004. kao servis za ugradnju autogas sistema za
             automobile.
           </p>
           <p className='pb-2 text-sm'>
             Otada se posao širio, naša interesovanja su bila usmerena i na druge
-            stvari, pa smo 2011. počeli da proizvodimo i ugrađujemo segmentna
+            stvari, pa smo 2020. počeli da proizvodimo i ugrađujemo segmentna
             industrijska i garažna vrata.
           </p>
         </div>
@@ -27,22 +27,25 @@ export default function Bottom() {
           <hr className='pb-4' />
           <ul>
             <li>
+              <a href='/segment'>Segmentna vrata</a>
+            </li>
+            <li>
+              <a href='/rolo'>Rolo vrata</a>
+            </li>
+            <li>
+              <a href='/pergola'>Pergole</a>
+            </li>
+            <li>
+              <a href='/mosquito-net'>Komarnici</a>
+            </li>
+            <li>
               <a href='/tng'>TNG uređaji</a>
             </li>
             <li>
               <a href='/cng'>CNG uređaji</a>
             </li>
             <li>
-              <a href='/mosquito-net'>Komarnici</a>
-            </li>
-            <li>
-              <a href='/rolo'>Rolo vrata</a>
-            </li>
-            <li>
-              <a href='/segment'>Segmentna</a>
-            </li>
-            <li>
-              <a href='/pergola'>Pergole</a>
+              <a href='/about'>O nama</a>
             </li>
           </ul>
         </div>
@@ -57,7 +60,7 @@ export default function Bottom() {
             <MapPin />
             Povrtarska 30,
             <br />
-            Novi Sad
+            <span className='pl-7'>Novi Sad</span>
           </p>
           <p className='pb-4'>
             <Mail />{' '}
@@ -78,8 +81,8 @@ export default function Bottom() {
         <div className='flex-1'>
           <h3 className='pb-2 text-xl font-black'>Radno vreme</h3>
           <hr className='pb-4' />
-          <p>Ponedeljak – petak 09-19</p>
-          <p>Subota 09-15</p>
+          <p>Ponedeljak – petak 08-16</p>
+          <p>Subota 09-14</p>
           <p>Nedeljom ne radimo</p>
         </div>
       </div>
