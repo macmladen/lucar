@@ -6,6 +6,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation' // import required modules
 import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import Link from 'next/link'
 
 export default function Carousel() {
   return (
@@ -50,6 +51,14 @@ export default function Carousel() {
             <p className='text-2xl'>
               Ugradnja i izrada segmentnih industrijskih i garažnih vrata
             </p>
+            <p className='mt-4 py-4'>
+              <Link
+                href='/segment'
+                className='btn btn-link bg-lucar-blue p-4 font-bold text-white'
+              >
+                Detaljnije <span className='ml-4'>&gt;</span>
+              </Link>
+            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -69,6 +78,14 @@ export default function Carousel() {
           <div className='container relative bg-white/70 p-8'>
             <h2 className='pb-8 pt-4 text-6xl font-black'>Rolo vrata</h2>
             <p className='text-2xl'>Ugradnja i izrada rolo vrata</p>
+            <p className='mt-4 py-4'>
+              <Link
+                href='/rolo'
+                className='btn btn-link bg-lucar-blue p-4 font-bold text-white'
+              >
+                Detaljnije <span className='ml-4'>&gt;</span>
+              </Link>
+            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -88,6 +105,14 @@ export default function Carousel() {
           <div className='container relative bg-white/70 p-8'>
             <h2 className='pb-8 pt-4 text-6xl font-black'>Pergola</h2>
             <p className='text-2xl'>Ugradnja i izrada pergola</p>
+            <p className='mt-4 py-4'>
+              <Link
+                href='/pergola'
+                className='btn btn-link bg-lucar-blue p-4 font-bold text-white'
+              >
+                Detaljnije <span className='ml-4'>&gt;</span>
+              </Link>
+            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -107,6 +132,14 @@ export default function Carousel() {
           <div className='container relative bg-white/70 p-8'>
             <h2 className='pb-8 pt-4 text-6xl font-black'>Komarnici</h2>
             <p className='text-2xl'>Ugradnja i izrada komarnika</p>
+            <p className='mt-4 py-4'>
+              <Link
+                href='/mosquito-net'
+                className='btn btn-link bg-lucar-blue p-4 font-bold text-white'
+              >
+                Detaljnije <span className='ml-4'>&gt;</span>
+              </Link>
+            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -126,6 +159,14 @@ export default function Carousel() {
           <div className='container relative bg-white/70 p-8'>
             <h2 className='pb-8 pt-4 text-6xl font-black'>TNG</h2>
             <p className='text-2xl'>Ugradnja i održavanje TNG uređaja</p>
+            <p className='mt-4 py-4'>
+              <Link
+                href='/tng'
+                className='btn btn-link bg-lucar-blue p-4 font-bold text-white'
+              >
+                Detaljnije <span className='ml-4'>&gt;</span>
+              </Link>
+            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -145,6 +186,14 @@ export default function Carousel() {
           <div className='container relative bg-white/70 p-8'>
             <h2 className='pb-8 pt-4 text-6xl font-black'>CNG</h2>
             <p className='text-2xl'>Ugradnja i održavanje CNG uređaja</p>
+            <p className='mt-4 py-4'>
+              <Link
+                href='/cng'
+                className='btn btn-link bg-lucar-blue p-4 font-bold text-white'
+              >
+                Detaljnije <span className='ml-4'>&gt;</span>
+              </Link>
+            </p>
           </div>
         </SwiperSlide>
       </Swiper>
