@@ -1,4 +1,12 @@
-export default function Hero({ image, title, subtitle }) {
+export default function Hero({
+  image,
+  title,
+  subtitle,
+}: {
+  image: string
+  title: string
+  subtitle: string
+}) {
   return (
     <header
       style={{
