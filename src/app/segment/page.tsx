@@ -1,6 +1,38 @@
 import Hero from '@/components/blocks/hero'
+import PhotoAlbum from 'react-photo-album'
 
 export default function Segmented() {
+  const photos = [
+    { src: '/img/segment/garage-rolo-big-1a.jpg', width: 800, height: 600 },
+    { src: '/img/segment/garage-rolo-big-1b.jpg', width: 800, height: 600 },
+    { src: '/img/segment/garage-rolo-big-2a.jpg', width: 800, height: 600 },
+    { src: '/img/segment/garage-rolo-big-2b.jpg', width: 800, height: 600 },
+    { src: '/img/segment/garage-rolo-window.jpg', width: 800, height: 600 },
+  ]
+  const photos2 = [
+    { src: '/img/segment/garazna-industr1.jpg', width: 800, height: 600 },
+    { src: '/img/segment/garazna-industr2.jpg', width: 800, height: 600 },
+    { src: '/img/segment/garazna-oblici.png', width: 800, height: 600 },
+    { src: '/img/segment/garazna-segm4.jpg', width: 800, height: 600 },
+    {
+      src: '/img/segment/garazna-segmentna-vrata1.jpg',
+      width: 800,
+      height: 600,
+    },
+    {
+      src: '/img/segment/garazna-segmentna-vrata2.jpg',
+      width: 800,
+      height: 600,
+    },
+    {
+      src: '/img/segment/garazna-segmentna-vrata3.jpg',
+      width: 800,
+      height: 600,
+    },
+    { src: '/img/segment/garazna-tipovi.png', width: 800, height: 600 },
+    { src: '/img/segment/garazna-vrata.gif', width: 800, height: 600 },
+    { src: '/img/segment/garazna-vrata.jpg', width: 800, height: 600 },
+  ]
   return (
     <section id='segment'>
       <Hero
@@ -123,6 +155,12 @@ export default function Segmented() {
           prepreku, vrata vraćaju u otvoren položaj, čime sprečavaju povredu
           ljudi i oštećenje predmeta.
         </p>
+        <hr />
+        <h2>Fotografije koje imamo:</h2>
+        <PhotoAlbum layout='rows' photos={photos} />
+        <hr />
+        <h2>Fotografije sa neta:</h2>
+        <PhotoAlbum layout='rows' photos={photos2} />
       </article>
     </section>
   )

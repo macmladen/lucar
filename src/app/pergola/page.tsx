@@ -1,6 +1,67 @@
 import Hero from '@/components/blocks/hero'
+import PhotoAlbum from 'react-photo-album'
 
 export default function Pergola() {
+  const photos = [
+    { src: '/img/pergola/pergola-1a.jpg', width: 800, height: 600 },
+    { src: '/img/pergola/pergola-1b.jpg', width: 800, height: 600 },
+    { src: '/img/pergola/pergola-1c.jpg', width: 800, height: 600 },
+    { src: '/img/pergola/pergola-1d.jpg', width: 800, height: 600 },
+    { src: '/img/pergola/pergola-2a.jpg', width: 800, height: 600 },
+    { src: '/img/pergola/pergola-2b.jpg', width: 800, height: 600 },
+    { src: '/img/pergola/pergola-2c.jpg', width: 800, height: 600 },
+    { src: '/img/pergola/pergola-3a.jpg', width: 800, height: 600 },
+    { src: '/img/pergola/pergola-3b.jpg', width: 800, height: 600 },
+    { src: '/img/pergola/pergola-3c.jpg', width: 800, height: 600 },
+    { src: '/img/pergola/pergola-3d.jpg', width: 800, height: 600 },
+    { src: '/img/pergola/pergola-3e.jpg', width: 800, height: 600 },
+    { src: '/img/pergola/pergola-3f.jpg', width: 800, height: 600 },
+    { src: '/img/pergola/pergola-3g.jpg', width: 800, height: 600 },
+  ]
+  const photos2 = [
+    { src: '/img/pergola/nastresnica-1.jpg', width: 800, height: 600 },
+    { src: '/img/pergola/nastresnica-2.jpg', width: 800, height: 600 },
+    { src: '/img/pergola/nastresnica-bio3.jpg', width: 800, height: 600 },
+    {
+      src: '/img/pergola/nastresnica-bioklimatska-sa-pokretnim-krovom.jpg',
+      width: 800,
+      height: 600,
+    },
+    {
+      src: '/img/pergola/nastresnica-laka-tekstilna.png',
+      width: 800,
+      height: 600,
+    },
+    {
+      src: '/img/pergola/nastresnica-lucna-tekstilna.jpg',
+      width: 800,
+      height: 600,
+    },
+    { src: '/img/pergola/nastresnica-obična.jpg', width: 800, height: 600 },
+    { src: '/img/pergola/nastresnica-oktavus.jpg', width: 800, height: 600 },
+    {
+      src: '/img/pergola/nastresnica-sa-zategama.jpg',
+      width: 800,
+      height: 600,
+    },
+    {
+      src: '/img/pergola/nastresnica-samostojeca.jpg',
+      width: 800,
+      height: 600,
+    },
+    { src: '/img/pergola/nastresnica-standardna.jpg', width: 800, height: 600 },
+    { src: '/img/pergola/nastresnica-tekstilne.jpg', width: 800, height: 600 },
+    {
+      src: '/img/pergola/nastresnica-ugostiteljstvo1.jpg',
+      width: 800,
+      height: 600,
+    },
+    {
+      src: '/img/pergola/nastresnica-ugostiteljstvo2.jpg',
+      width: 800,
+      height: 600,
+    },
+  ]
   return (
     <section id='pergola'>
       <Hero
@@ -114,6 +175,12 @@ export default function Pergola() {
           na izradi kvalitetnih pergola, kombinujući vaše želje i stručne
           savete, kako bismo dobili idealan gotov proizvod.
         </p>
+        <hr />
+        <h2>Fotografije koje imamo:</h2>
+        <PhotoAlbum layout='rows' photos={photos} />
+        <hr />
+        <h2>Fotografije sa neta:</h2>
+        <PhotoAlbum layout='rows' photos={photos2} />
       </article>
     </section>
   )

@@ -1,6 +1,77 @@
 import Hero from '@/components/blocks/hero'
+import PhotoAlbum from 'react-photo-album'
 
 export default function mosquitoNet() {
+  const photos = [
+    {
+      src: '/img/mosquitonet/mosquito-net-balcony.jpg',
+      width: 800,
+      height: 600,
+    },
+    {
+      src: '/img/mosquitonet/mosquito-net-door-1.jpg',
+      width: 800,
+      height: 600,
+    },
+    {
+      src: '/img/mosquitonet/mosquito-net-door-2a.jpg',
+      width: 800,
+      height: 600,
+    },
+    {
+      src: '/img/mosquitonet/mosquito-net-door-2b.jpg',
+      width: 800,
+      height: 600,
+    },
+    {
+      src: '/img/mosquitonet/mosquito-net-window-1.jpg',
+      width: 800,
+      height: 600,
+    },
+    {
+      src: '/img/mosquitonet/mosquito-net-window-2.jpg',
+      width: 800,
+      height: 600,
+    },
+  ]
+  const photos2 = [
+    { src: '/img/mosquitonet/komarnici-fixed-1.jpg', width: 800, height: 600 },
+    { src: '/img/mosquitonet/komarnici-fixed-2.jpg', width: 800, height: 600 },
+    { src: '/img/mosquitonet/komarnici-fixed-3.jpg', width: 800, height: 600 },
+    {
+      src: '/img/mosquitonet/komarnici-fixed-door-plisse-1.jpg',
+      width: 800,
+      height: 600,
+    },
+    {
+      src: '/img/mosquitonet/komarnici-fixed-door-plisse-2.jpg',
+      width: 800,
+      height: 600,
+    },
+    {
+      src: '/img/mosquitonet/komarnici-fixed-door-plisse-3.jpeg',
+      width: 800,
+      height: 600,
+    },
+    {
+      src: '/img/mosquitonet/komarnici-fixed-door-plisse-4.jpg',
+      width: 800,
+      height: 600,
+    },
+    {
+      src: '/img/mosquitonet/komarnici-fixed-hinge.jpg',
+      width: 800,
+      height: 600,
+    },
+    {
+      src: '/img/mosquitonet/komarnici-fixed-window-plisse-1.jpg',
+      width: 800,
+      height: 600,
+    },
+    { src: '/img/mosquitonet/komarnici-rolo-1.jpg', width: 800, height: 600 },
+    { src: '/img/mosquitonet/komarnici-rolo-1.png', width: 800, height: 600 },
+    { src: '/img/mosquitonet/komarnici-rolo-2.jpg', width: 800, height: 600 },
+  ]
   return (
     <section id='mosquito-net'>
       <Hero
@@ -31,6 +102,9 @@ export default function mosquitoNet() {
           balkonska vrata, naš stručni tim će vam pomoći u izboru! Dolazak na
           adresu radi uzimanja mera i montaža komarnika su BESPLATNI!
         </p>
+        <video autoPlay loop controls width='360' height='480'>
+          <source src='/img/mosquitonet/mosquito-net-door.mp4' />
+        </video>
         <h2>Plise komarnici</h2>
         <p>
           Naša topla preporuka za stambeni ili radni prostor su PLISE KOMARNICI.
@@ -159,6 +233,12 @@ export default function mosquitoNet() {
           koji je ceo pričvršćen za ram a ima mehanizam za otvaranje, tako da je
           dobar izbor za spoljna vrata i terase.{' '}
         </p>
+        <hr />
+        <h2>Fotografije koje imamo:</h2>
+        <PhotoAlbum layout='rows' photos={photos} />
+        <hr />
+        <h2>Fotografije sa neta:</h2>
+        <PhotoAlbum layout='rows' photos={photos2} />
       </article>
     </section>
   )

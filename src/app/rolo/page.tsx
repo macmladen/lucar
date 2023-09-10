@@ -1,6 +1,14 @@
 import Hero from '@/components/blocks/hero'
+import PhotoAlbum from 'react-photo-album'
 
 export default function roloDoor() {
+  const photos = [
+    { src: '/img/rolo/garage-rolo-1a.jpg', width: 800, height: 600 },
+    { src: '/img/rolo/garage-rolo-1b.jpg', width: 800, height: 600 },
+    { src: '/img/rolo/garage-rolo-2.jpg', width: 800, height: 600 },
+    { src: '/img/rolo/garage-rolo-3.jpg', width: 800, height: 600 },
+    { src: '/img/rolo/garage-rolo-4.jpg', width: 800, height: 600 },
+  ]
   return (
     <section id='rolo'>
       <Hero
@@ -31,6 +39,9 @@ export default function roloDoor() {
           aluminijumskih rolo vrat amožemo postaviti unutar objekta ali I spolja
           sve u zavisnosti od vaših esteckih želja,
         </p>
+        <hr />
+        <h2>Fotografije koje imamo:</h2>
+        <PhotoAlbum layout='rows' photos={photos} />
       </article>
     </section>
   )

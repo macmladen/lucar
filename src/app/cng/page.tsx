@@ -1,6 +1,8 @@
 import Hero from '@/components/blocks/hero'
+import PhotoAlbum from 'react-photo-album'
 
 export default function Cng() {
+  const photos = [{ src: '/img/cng/cng.jpg', width: 800, height: 600 }]
   return (
     <section id='cng'>
       <Hero
@@ -90,6 +92,9 @@ export default function Cng() {
           od direktnih udara težih predmeta a sam multiventil treba da je uvek
           zaštićen.
         </p>
+        <hr />
+        <h2>Fotografije koje imamo:</h2>
+        <PhotoAlbum layout='rows' photos={photos} />
       </article>
     </section>
   )

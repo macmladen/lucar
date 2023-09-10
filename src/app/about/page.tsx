@@ -1,7 +1,11 @@
 import Hero from '@/components/blocks/hero'
 import Link from 'next/link'
+import PhotoAlbum from 'react-photo-album'
 
 export default function About() {
+  const photos = [
+    { src: '/img/about/lucar-house.jpg', width: 800, height: 600 },
+  ]
   return (
     <section id='about'>
       <Hero
@@ -65,6 +69,9 @@ export default function About() {
           po tome što su u konstrukciji sastavljena od niza segmenata koji su
           međusobno povezani... <Link href='/segment'>Detaljnije</Link>
         </p>
+        <hr />
+        <h2>Fotografije koje imamo:</h2>
+        <PhotoAlbum layout='rows' photos={photos} />
       </article>
     </section>
   )
