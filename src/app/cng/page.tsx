@@ -1,16 +1,13 @@
+import Hero from '@/components/blocks/hero'
+
 export default function Cng() {
   return (
     <section id='cng'>
-      <header className="bg-[url('/img/cng/cng.jpg')] bg-cover text-white">
-        <div className='container flex h-72 items-center'>
-          <h1 className='m-auto bg-lucar-gray/[0.9] px-20 py-4 text-center'>
-            <span className='text-4xl font-black'>CNG</span>
-            <br />
-            <br />
-            <span className='text-2xl'>(compressed natural gas)</span>
-          </h1>
-        </div>
-      </header>
+      <Hero
+        image='/img/cng/cng.jpg'
+        title='CNG'
+        subtitle='(compressed natural gas)'
+      />
       <article className='container prose pt-8 dark:prose-invert'>
         <h2>Šta je metan (cng - compressed natural gas) </h2>
         <p>

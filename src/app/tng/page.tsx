@@ -1,16 +1,13 @@
+import Hero from '@/components/blocks/hero'
+
 export default function Tng() {
   return (
     <section id='tng'>
-      <header className="bg-[url('/img/tng/tng.jpg')] bg-cover text-white">
-        <div className='container flex h-72 items-center'>
-          <h1 className='m-auto bg-lucar-gray/[0.9] px-20 py-4 text-center'>
-            <span className='text-4xl font-black'>TNG</span>
-            <br />
-            <br />
-            <span className='text-2xl'>(tečni naftni gas)</span>
-          </h1>
-        </div>
-      </header>
+      <Hero
+        image='/img/tng/tng.jpg'
+        title='TNG'
+        subtitle='(tečni naftni gas)'
+      />
       <article className='container prose pt-8 dark:prose-invert'>
         <h2>Šta je lpg (liquefied petroleum gas)/tng (tečni naftni gas)?</h2>
         <p>
