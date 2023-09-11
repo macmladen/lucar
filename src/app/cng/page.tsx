@@ -10,7 +10,7 @@ export default function Cng() {
         title='CNG'
         subtitle='(compressed natural gas)'
       />
-      <article className='container prose pt-8 dark:prose-invert'>
+      <article className='container prose my-20 dark:prose-invert'>
         <h2>Šta je metan (cng - compressed natural gas) </h2>
         <p>
           Metan je po ekološkim standardima prirodni gas čije su reserve mnogo

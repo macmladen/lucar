@@ -3,6 +3,11 @@ import PhotoAlbum from 'react-photo-album'
 
 export default function Segmented() {
   const photos = [
+    { src: '/img/segment/garage-rolo-1a.jpg', width: 800, height: 600 },
+    { src: '/img/segment/garage-rolo-1b.jpg', width: 800, height: 600 },
+    { src: '/img/segment/garage-rolo-2.jpg', width: 800, height: 600 },
+    { src: '/img/segment/garage-rolo-3.jpg', width: 800, height: 600 },
+    { src: '/img/segment/garage-rolo-4.jpg', width: 800, height: 600 },
     { src: '/img/segment/garage-rolo-big-1a.jpg', width: 800, height: 600 },
     { src: '/img/segment/garage-rolo-big-1b.jpg', width: 800, height: 600 },
     { src: '/img/segment/garage-rolo-big-2a.jpg', width: 800, height: 600 },
@@ -40,7 +45,7 @@ export default function Segmented() {
         subtitle='Sigurno i praktično'
         image='/img/segment/garage-rolo-big-2a.jpg'
       />
-      <article className='container prose pt-8 dark:prose-invert'>
+      <article className='container prose my-20 dark:prose-invert'>
         <p>
           Popularnost segmentnih vrata značajno je porasla poslednjih godina.
           Popularna su zbog svoje snage i sigurnosti. Naziv segmentna su dobila

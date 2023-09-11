@@ -10,7 +10,7 @@ export default function Tng() {
         title='TNG'
         subtitle='(tečni naftni gas)'
       />
-      <article className='container prose pt-8 dark:prose-invert'>
+      <article className='container prose my-20 dark:prose-invert'>
         <h2>Šta je lpg (liquefied petroleum gas)/tng (tečni naftni gas)?</h2>
         <p>
           Tečni naftni gas se proizvodi u rafinerijama nafte kao nusproizvod

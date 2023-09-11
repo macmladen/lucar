@@ -69,7 +69,7 @@ export default function Pergola() {
         subtitle='Najbolja zaštita od sunca'
         image='/img/pergola/pergola-3a.jpg'
       />
-      <article className='container prose pt-8 dark:prose-invert'>
+      <article className='container prose my-20 dark:prose-invert'>
         <h2>Pergole</h2>
         <p>
           Pergole su najsavremeniji i najefikasniji pokretni sistem zaštite od

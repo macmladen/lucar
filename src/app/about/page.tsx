@@ -13,7 +13,7 @@ export default function About() {
         subtitle='Ugradnja i servis TNG, CNG, segmentnih, rolo vrata i komarnika'
         image='/img/about/lucar-house.jpg'
       />
-      <article className='container prose pt-8 dark:prose-invert'>
+      <article className='container prose my-20 dark:prose-invert'>
         <p>"Lucar" SZTR je mala porodična firma iz Novog Sada.</p>
         <p>
           Osnovana je 2004. kao servis za ugradnju autogas sistema za

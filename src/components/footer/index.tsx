@@ -5,7 +5,7 @@ import CallUs from '@/components/footer/call-us'
 
 export default function Footer() {
   return (
-    <footer id='footer' className='mt-20'>
+    <footer id='footer'>
       <CallUs />
       <Bottom />
       <GoogleMap />

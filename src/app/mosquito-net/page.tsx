@@ -79,7 +79,7 @@ export default function mosquitoNet() {
         subtitle='Plise, rolo i fiksni'
         image='/img/mosquitonet/mosquito-net-window-2.jpg'
       />
-      <article className='container prose pt-8 dark:prose-invert'>
+      <article className='container prose my-20 dark:prose-invert'>
         <h2>Zašto komarnici</h2>
         <p>
           Komarnici su ekološka i trajna zaštita od svih insekata. Vrlo su

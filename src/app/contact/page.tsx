@@ -12,7 +12,7 @@ export default function Contact() {
         subtitle='Pozovite nas ili svratite'
         image='/img/about/lucar-house.jpg'
       />
-      <article className='container prose pt-8 dark:prose-invert'>
+      <article className='container prose my-20 dark:prose-invert'>
         <p>Kontaktirajte nas slobodno!</p>
         <hr />
         <h2>Fotografije koje imamo:</h2>
