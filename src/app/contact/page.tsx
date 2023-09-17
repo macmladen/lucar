@@ -15,7 +15,7 @@ export default function Contact() {
       <article className='container prose my-20 dark:prose-invert'>
         <p>Kontaktirajte nas slobodno!</p>
         <hr />
-        <h2>Fotografije koje imamo:</h2>
+        <h2>Naši projekti</h2>
         <PhotoAlbum layout='rows' photos={photos} />
       </article>
     </section>

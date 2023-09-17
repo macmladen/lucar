@@ -70,7 +70,7 @@ export default function About() {
           međusobno povezani... <Link href='/segment'>Detaljnije</Link>
         </p>
         <hr />
-        <h2>Fotografije koje imamo:</h2>
+        <h2>Naši projekti</h2>
         <PhotoAlbum layout='rows' photos={photos} />
       </article>
     </section>

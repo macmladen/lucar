@@ -2,7 +2,7 @@ import Hero from '@/components/blocks/hero'
 import PhotoAlbum from 'react-photo-album'
 
 export default function mosquitoNet() {
-  const photos = [
+  const ourWork = [
     {
       src: '/img/mosquitonet/mosquito-net-balcony.jpg',
       width: 800,
@@ -34,7 +34,7 @@ export default function mosquitoNet() {
       height: 600,
     },
   ]
-  const photos2 = [
+  const netPhotos = [
     { src: '/img/mosquitonet/komarnici-fixed-1.jpg', width: 800, height: 600 },
     { src: '/img/mosquitonet/komarnici-fixed-2.jpg', width: 800, height: 600 },
     { src: '/img/mosquitonet/komarnici-fixed-3.jpg', width: 800, height: 600 },
@@ -190,12 +190,6 @@ export default function mosquitoNet() {
           za balkonska vrata mrežica povlači u smeru levo-desno, dok se kod
           prozorskih rolo komarnika, mrežica povuče na gore ili na dole.
         </p>
-        <h2>Panelni komarnici</h2>
-        <p>
-          Mogu biti fiksni i fiksni sa magnetom (magneti omogućavaju laku
-          montažu/demontažu). Predviđeni su za manje prozore na stambenim
-          objektima (kupatilo, kuhinja, ostava…).{' '}
-        </p>
         <h2>Fiksni komarnici</h2>
         <p>
           Fiksni komarnici namenjeni su za prozore kod kojih se ne planira
@@ -234,11 +228,11 @@ export default function mosquitoNet() {
           dobar izbor za spoljna vrata i terase.{' '}
         </p>
         <hr />
-        <h2>Fotografije koje imamo:</h2>
-        <PhotoAlbum layout='rows' photos={photos} />
+        <h2>Naši projekti</h2>
+        <PhotoAlbum layout='rows' photos={ourWork} />
         <hr />
         <h2>Fotografije sa neta:</h2>
-        <PhotoAlbum layout='rows' photos={photos2} />
+        <PhotoAlbum layout='rows' photos={netPhotos} />
       </article>
     </section>
   )

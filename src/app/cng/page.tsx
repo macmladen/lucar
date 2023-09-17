@@ -87,13 +87,9 @@ export default function Cng() {
           jer se tom prilikom menja odnos vazduha i gasa, što dovodi do toga da
           automobil ima manju snagu.
         </p>
-        <p>
-          Boce ne zahteva nikakvo održavanje. Kutiju multiventila treba čuvati
-          od direktnih udara težih predmeta a sam multiventil treba da je uvek
-          zaštićen.
-        </p>
+        <p>Boce ne zahteva nikakvo održavanje.</p>
         <hr />
-        <h2>Fotografije koje imamo:</h2>
+        <h2>Naši projekti</h2>
         <PhotoAlbum layout='rows' photos={photos} />
       </article>
     </section>

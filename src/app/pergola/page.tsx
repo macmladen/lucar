@@ -2,7 +2,7 @@ import Hero from '@/components/blocks/hero'
 import PhotoAlbum from 'react-photo-album'
 
 export default function Pergola() {
-  const photos = [
+  const ourWork = [
     { src: '/img/pergola/pergola-1a.jpg', width: 800, height: 600 },
     { src: '/img/pergola/pergola-1b.jpg', width: 800, height: 600 },
     { src: '/img/pergola/pergola-1c.jpg', width: 800, height: 600 },
@@ -18,7 +18,7 @@ export default function Pergola() {
     { src: '/img/pergola/pergola-3f.jpg', width: 800, height: 600 },
     { src: '/img/pergola/pergola-3g.jpg', width: 800, height: 600 },
   ]
-  const photos2 = [
+  const netPhotos = [
     { src: '/img/pergola/nastresnica-1.jpg', width: 800, height: 600 },
     { src: '/img/pergola/nastresnica-2.jpg', width: 800, height: 600 },
     { src: '/img/pergola/nastresnica-bio3.jpg', width: 800, height: 600 },
@@ -140,23 +140,11 @@ export default function Pergola() {
           komfora i modernog dizajna nudi vam prijatan prostor tokom cele
           godine.
         </p>
-        <h3>Pergola sa zategama (tekstilna)</h3>
-        <p>
-          Konzolna pergola bez sistema stubova omogućava prijatan ambijent
-          korisniku zahvaljujući svojoj jednostavnoj funkciji automatskog
-          sklapanja (folding structure). Pogodna je za stambene objekte sa
-          projekcijom do 600 cm.
-        </p>
         <h3>Lučna tekstilna pergola</h3>
         <p>
           Vrhunski kvalitet i jednostavnost upotrebe. Ovalna struktura unosi
           arhitektonsku estetiku u svakoj primeni. Jedinstveni dizajn i laka
           konstrukcija.
-        </p>
-        <h3>Laka tekstilna pergola</h3>
-        <p>
-          Prozračni i lagani dizajn, maksimalna površina jednog polja je 60m².
-          Patentirana tehnologija i laka ugradnja.
         </p>
         <h2>Dodatna oprema</h2>
         <ul>
@@ -176,11 +164,11 @@ export default function Pergola() {
           savete, kako bismo dobili idealan gotov proizvod.
         </p>
         <hr />
-        <h2>Fotografije koje imamo:</h2>
-        <PhotoAlbum layout='rows' photos={photos} />
+        <h2>Naši projekti</h2>
+        <PhotoAlbum layout='rows' photos={ourWork} />
         <hr />
         <h2>Fotografije sa neta:</h2>
-        <PhotoAlbum layout='rows' photos={photos2} />
+        <PhotoAlbum layout='rows' photos={netPhotos} />
       </article>
     </section>
   )

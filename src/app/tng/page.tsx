@@ -42,8 +42,6 @@ export default function Tng() {
           sklopovi proizvedeni i ugrađeni po 67R01 standardima koji se
           primenjuje na teritoriji EU.
         </p>
-        „Lucar“ je implementirao i sertifikovao sistem upravljanja kvalitetom
-        prema zahtevima ISO 9001:2008.
         <h2>Proizvođači</h2>
         <p>(slika sertifikata/ugovora)</p>
         <p>
@@ -53,9 +51,7 @@ export default function Tng() {
           greške.
         </p>
         <p>
-          „Lucar“ poseduje sertifikate za ugradnju i održavanje autogas sistema
-          od strane firmi kao što su: TARTARINI, TOMASETTO, AC, LOVATO, LANDI.
-          (slike sertifikata, ugovora i sl.)
+          „Lucar“ poseduje sertifikate za ugradnju i održavanje autogas sistema.
         </p>
         <h2>Atest i reatest</h2>
         <p>
@@ -103,7 +99,7 @@ export default function Tng() {
           zaštićen.
         </p>
         <hr />
-        <h2>Fotografije koje imamo:</h2>
+        <h2>Naši projekti</h2>
         <PhotoAlbum layout='rows' photos={photos} />
       </article>
     </section>

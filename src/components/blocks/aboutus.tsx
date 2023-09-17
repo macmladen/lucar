@@ -9,10 +9,9 @@ export default function AboutUs() {
         </p>
         <p className='mb-4'>
           Otada se posao širio, naša interesovanja su bila usmerena i na druge
-          stvari, pa smo 2020. počeli da proizvodimo i ugrađujemo segmentna
-          industrijska i garažna vrata. Od 2013. zvanični smo zastupnici
-          kompanije koja pravi i ugrađuje pergole, a od 2018. asortiman
-          proizvoda proširili smo prodajom i ugradnjom komarnika. Iza nas je
+          stvari, pa smo 2020. počeli da proizvodimo i ugrađujemo pergole. Od
+          2022 asortiman proširujemo na garažne i industrijske segmentne kapije
+          i rolo vrata. Radimo i prodaju i ugradnju komarnika. Iza nas je
           decenija uspešno završenih poslova i stotine zadovoljnih klijenata.
         </p>
         <p className='mb-4'>

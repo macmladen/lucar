@@ -2,7 +2,7 @@ import Hero from '@/components/blocks/hero'
 import PhotoAlbum from 'react-photo-album'
 
 export default function roloDoor() {
-  const photos2 = [
+  const netPhotos = [
     { src: '/img/rolo/rolo.jpg', width: 800, height: 600 },
     { src: '/img/rolo/rolo.webm', width: 800, height: 600 },
     { src: '/img/rolo/rolo1.jpg', width: 800, height: 600 },
@@ -39,7 +39,7 @@ export default function roloDoor() {
     <section id='rolo'>
       <Hero
         title='Rolo vrata'
-        subtitle='Rolo sigurnosna vrata'
+        subtitle='Rolo vrata'
         image='/img/rolo/rolo-resetke.jpg'
       />
       <article className='container prose my-20 dark:prose-invert'>
@@ -49,7 +49,7 @@ export default function roloDoor() {
           ekonomično rešenje a doprinose i bezbednosti Vašeg objekta.
         </p>
         <p>
-          Pogon rolo vrata može biti ručni i električni. Ručni pogoni
+          Pogon rolo vrata može da bude ručni i električni. Ručni pogoni
           funkcionišu kao opružni, dok se kod električnih koriste cevni motori
           ugrađeni u osovinu ili industrijski motori. Ovi motori su snabdeveni
           pomocnim sistemom za otvaranje u slučaju nestanka struje. Upravljanje
@@ -76,33 +76,6 @@ export default function roloDoor() {
         <p>
           Zastor vrata, vođica, gornja maska i zavojna obloga osovine dostupni
           su u istoj boji.
-        </p>
-        <h2>Rolo vrata bez izolacije</h2>
-        <p>
-          Čelična rolo vrata sa <strong>punim lamelama</strong> bez izolacije su
-          odlično bezbednosno rešenje za vašu garažu, lokal ili poslovni
-          prostor. Odlikuje ih velika čvrstina, otporna su na udarce i razna
-          mehanička oštećenja. Zauzimaju malo prostora i laka su za upravljanje.
-        </p>
-        <p>
-          Pored punih lamela, nudimo vam i rolo vrata sa{' '}
-          <strong>perforiranim lamelama</strong>. Omogućavaju vidljivost izloga
-          ili objekta kada ne radite. Moguće je kombinovati pune i perforirane
-          lamele. Odlikuje ih velika čvrstina, otporna su na udarce i razna
-          mehanička oštećenja. Zauzimaju malo prostora i laka su za upravljanje.
-        </p>
-        <p>
-          Čelična rolo vrata izrađena su od pocinkovanog mašinski profilisanog
-          lima. Debljina lima je 0,8 mm sa garantovanim kvalitetom i
-          sertifikatom o poreklu iz EU.
-        </p>
-        <p>
-          Završna lamela izrađena je od mašinski profilisanog pocinkovanog lima
-          debljine 1 mm sa dodatnim ojačanjem po celoj dužini.
-        </p>
-        <p>
-          Elektromotor i sva prateća elektronska oprema urađeni su u skladu sa
-          normama i regulativama EU.
         </p>
         <h2>Rolo vrata sa izolacijom</h2>
         <p>
@@ -150,21 +123,12 @@ export default function roloDoor() {
           sa profilnim ojačanjem, čime se garantuje izdržljivost velikih
           opterećenja i sila.
         </p>
-        <h2>Ekskluzivna INOX rolo vrata</h2>
-        <p>
-          U ponudi imamo rolo vrata napravljena od nerđajućeg čelika (inoxa).
-          Rade se po meri i zahtevu. Idealna su za sva mesta gde je neophodna
-          pojačana higijena. Mogu biti urađena i kao kombinacija punih lamela i
-          rolo rešetki.
-        </p>
+        <h2>Servis rolo vrata</h2>
         <p>
           U slučaju bilo kakvih nepredviđenih situacija stoji vam na
           raspolaganju stručni servis i telefonska podrška.
         </p>
-        <p>
-          Dajemo garanciju od 30 godina za čelični rolo zastor na koroziju, kao
-          i 5 godina na motore.
-        </p>
+        <p>Dajemo garanciju 2 godina na motore.</p>
         <p>
           Elektromotor kao i sva prateća oprema, urađeni su u skladu sa normama
           i regulativama EU.
@@ -176,7 +140,7 @@ export default function roloDoor() {
         <p>Rolo vrata možete poručiti sa i bez ugradnje.</p>
         <hr />
         <h2>Fotografije sa neta:</h2>
-        <PhotoAlbum layout='rows' photos={photos2} />
+        <PhotoAlbum layout='rows' photos={netPhotos} />
       </article>
     </section>
   )

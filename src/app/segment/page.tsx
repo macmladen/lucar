@@ -2,7 +2,7 @@ import Hero from '@/components/blocks/hero'
 import PhotoAlbum from 'react-photo-album'
 
 export default function Segmented() {
-  const photos = [
+  const ourWork = [
     { src: '/img/segment/garage-rolo-1a.jpg', width: 800, height: 600 },
     { src: '/img/segment/garage-rolo-1b.jpg', width: 800, height: 600 },
     { src: '/img/segment/garage-rolo-2.jpg', width: 800, height: 600 },
@@ -14,7 +14,7 @@ export default function Segmented() {
     { src: '/img/segment/garage-rolo-big-2b.jpg', width: 800, height: 600 },
     { src: '/img/segment/garage-rolo-window.jpg', width: 800, height: 600 },
   ]
-  const photos2 = [
+  const netPhotos = [
     { src: '/img/segment/garazna-industr1.jpg', width: 800, height: 600 },
     { src: '/img/segment/garazna-industr2.jpg', width: 800, height: 600 },
     { src: '/img/segment/garazna-oblici.png', width: 800, height: 600 },
@@ -62,11 +62,11 @@ export default function Segmented() {
         </p>
         <p>
           Sastoje se od bočnog sistema vodilica koje imaju posebnu blokadu, na
-          čijem kraju se nalazi aluminijumski profil sa duplim četkama za puno
-          zatvaranje. Za kretanje remenica vrata, posebno konfigurisan zupčanik
-          je čvrsto povezan sa omotačem. Uz saglasnost kupca i uzimajući u obzir
-          njegove potrebe, donji deo specijalnog zupčanika može biti dodatno
-          obrađen tako da doseže do najviše tačke objekta i savršeno se uklapa u
+          čijem kraju se nalazi aluminijumski profil za puno zatvaranje. Za
+          kretanje remenica vrata, posebno konfigurisan zupčanik je čvrsto
+          povezan sa omotačem. Uz saglasnost kupca i uzimajući u obzir njegove
+          potrebe, donji deo specijalnog zupčanika može biti dodatno obrađen
+          tako da doseže do najviše tačke objekta i savršeno se uklapa u
           unutrašnje geometrije zgrade i na taj način uslovljava potpuni
           ergonomski rezultat bez primetne promene u ukupnoj ceni. Odgovarajući
           deo sistema za podizanje je zašrafljen na vrhu zupčanika.
@@ -79,10 +79,9 @@ export default function Segmented() {
           zbog bezbednosti osoblja.
         </p>
         <p>
-          Paneli se sastoje od lima 0,60 mm i ispunjeni su poliesterom koji je
-          zavaren posebnim poliuretanskim lepkom. Oni nose zglobove duž ivica,
-          kao i posebna uzdužna ojačanja. Panel u gornjem delu vrata ima
-          specijalni gumeni zatvarač.
+          Paneli se sastoje od lima i ispunjeni su ispunom poliuretanom. Oni
+          nose zglobove duž ivica, kao i posebna uzdužna ojačanja. Panel u
+          gornjem delu vrata ima specijalni gumeni zatvarač.
         </p>
         <p>Kretanje se vrši preko pogonskog kaiša a ne putem kablova.</p>
         <p>
@@ -161,11 +160,11 @@ export default function Segmented() {
           ljudi i oštećenje predmeta.
         </p>
         <hr />
-        <h2>Fotografije koje imamo:</h2>
-        <PhotoAlbum layout='rows' photos={photos} />
+        <h2>Naši projekti</h2>
+        <PhotoAlbum layout='rows' photos={ourWork} />
         <hr />
         <h2>Fotografije sa neta:</h2>
-        <PhotoAlbum layout='rows' photos={photos2} />
+        <PhotoAlbum layout='rows' photos={netPhotos} />
       </article>
     </section>
   )
