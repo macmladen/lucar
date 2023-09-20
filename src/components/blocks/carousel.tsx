@@ -44,7 +44,8 @@ export default function Carousel() {
               position: 'absolute',
             }}
             alt='Segmentna vrata'
-            loading='lazy'
+            // loading='eager' // For LCP optimisation
+            priority={true}
           />
           <div className='container relative bg-white/70 p-8'>
             <h2 className='pb-8 pt-4 text-6xl font-black'>Segmentna vrata</h2>
@@ -73,7 +74,6 @@ export default function Carousel() {
               position: 'absolute',
             }}
             alt='Rolo vrata'
-            loading='lazy'
           />
           <div className='container relative bg-white/70 p-8'>
             <h2 className='pb-8 pt-4 text-6xl font-black'>Rolo vrata</h2>
@@ -100,7 +100,6 @@ export default function Carousel() {
               position: 'absolute',
             }}
             alt='Ugradnja i izrada pergola'
-            loading='lazy'
           />
           <div className='container relative bg-white/70 p-8'>
             <h2 className='pb-8 pt-4 text-6xl font-black'>Pergola</h2>
@@ -127,7 +126,6 @@ export default function Carousel() {
               position: 'absolute',
             }}
             alt='Ugradnja i izrada komarnika'
-            loading='lazy'
           />
           <div className='container relative bg-white/70 p-8'>
             <h2 className='pb-8 pt-4 text-6xl font-black'>Komarnici</h2>
@@ -154,7 +152,6 @@ export default function Carousel() {
               position: 'absolute',
             }}
             alt='Ugradnja i održavanje TNG uređaja'
-            loading='lazy'
           />
           <div className='container relative bg-white/70 p-8'>
             <h2 className='pb-8 pt-4 text-6xl font-black'>TNG</h2>
@@ -181,7 +178,6 @@ export default function Carousel() {
               position: 'absolute',
             }}
             alt='Ugradnja i održavanje CNG uređaja'
-            loading='lazy'
           />
           <div className='container relative bg-white/70 p-8'>
             <h2 className='pb-8 pt-4 text-6xl font-black'>CNG</h2>
