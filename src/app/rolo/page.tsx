@@ -1,5 +1,4 @@
 import Hero from '@/components/blocks/hero'
-import PhotoAlbum from 'react-photo-album'
 
 export default function roloDoor() {
   const netPhotos = [
@@ -40,7 +39,7 @@ export default function roloDoor() {
       <Hero
         title='Rolo vrata'
         subtitle='Rolo vrata'
-        image='/img/rolo/rolo-resetke.jpg'
+        image='/img/rolo/rolo-2.jpg'
       />
       <article className='container prose my-20 dark:prose-invert'>
         <p>
@@ -138,9 +137,11 @@ export default function roloDoor() {
           potrebama. Na raspolaganju su vam boje iz RAL karte.
         </p>
         <p>Rolo vrata možete poručiti sa i bez ugradnje.</p>
+        {/*
         <hr />
         <h2>Fotografije sa neta:</h2>
         <PhotoAlbum layout='rows' photos={netPhotos} />
+*/}
       </article>
     </section>
   )

@@ -1,9 +1,10 @@
-import Hero from '@/components/blocks/hero'
 import Link from 'next/link'
+import Hero from '@/components/blocks/hero'
 import PhotoAlbum from 'react-photo-album'
+import 'yet-another-react-lightbox/plugins/thumbnails.css'
 
 export default function About() {
-  const photos = [
+  const ourWork = [
     { src: '/img/about/lucar-house.jpg', width: 800, height: 600 },
   ]
   return (
@@ -70,8 +71,7 @@ export default function About() {
           međusobno povezani... <Link href='/segment'>Detaljnije</Link>
         </p>
         <hr />
-        <h2>Naši projekti</h2>
-        <PhotoAlbum layout='rows' photos={photos} />
+        <PhotoAlbum layout='rows' photos={ourWork} />
       </article>
     </section>
   )

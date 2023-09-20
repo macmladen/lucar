@@ -63,7 +63,7 @@ export default function Carousel() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src='/img/rolo/rolo-resetke.jpg'
+            src='/img/rolo/rolo-1.jpg'
             width={1200}
             height={675}
             style={{

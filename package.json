@@ -42,7 +42,6 @@
     "swiper": "^10.2.0",
     "tailwindcss": "^3.3.3",
     "tailwindcss-animate": "^1.0.7",
-    "typography:latest": "link:@tailwindcss/typography:latest",
     "yet-another-react-lightbox": "^3.12.2"
   },
   "devDependencies": {
