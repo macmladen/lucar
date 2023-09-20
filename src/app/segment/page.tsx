@@ -92,8 +92,8 @@ export default function Segmented() {
           zbog bezbednosti osoblja.
         </p>
         <p>
-          Paneli se sastoje od lima i ispunjeni su ispunom poliuretanom. Oni
-          nose zglobove duž ivica, kao i posebna uzdužna ojačanja. Panel u
+          Paneli se sastoje od lima 0,50 mm i ispunjeni su ispunom poliuretanom.
+          Oni nose zglobove duž ivica, kao i posebna uzdužna ojačanja. Panel u
           gornjem delu vrata ima specijalni gumeni zatvarač.
         </p>
         <p>Kretanje se vrši preko pogonskog kaiša a ne putem kablova.</p>

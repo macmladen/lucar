@@ -15,25 +15,24 @@ export default function About() {
         image='/img/about/lucar-house.jpg'
       />
       <article className='container prose my-20 dark:prose-invert'>
-        <p>"Lucar" SZTR je mala porodična firma iz Novog Sada.</p>
-        <p>
-          Osnovana je 2004. kao servis za ugradnju autogas sistema za
-          automobile.
+        <p className='mb-4'>
+          <strong>SZTR Lucar</strong> je mala porodična firma iz Novog Sada,
+          osnovana je 2004. godine kao servis za ugradnju autogas sistema za
+          putnička i komercijalna vozila.
+        </p>
+        <p className='mb-4'>
+          Posao širio i naša interesovanja usmerena su i na druge oblasti, pa
+          smo 2020. proširili asortiman proizvoda i usluga i počeli da
+          proizvodimo i ugrađujemo pergole, garažne i industrijske segmentne
+          kapije, rolo vrata i komarnike.
         </p>
         <p>
-          Otada se posao širio, naša interesovanja su bila usmerena i na druge
-          stvari, pa smo 2020. počeli da proizvodimo i ugrađujemo segmentna
-          industrijska i garažna vrata.
+          Iza nas je decenija uspešno završenih poslova i stotine zadovoljnih
+          klijenata.
         </p>
-        <p>
-          Od 2021. zvanični smo zastupnici kompanije koja pravi i ugrađuje
-          pergole, a od 2022. asortiman proizvoda proširili smo prodajom i
-          ugradnjom komarnika.
-        </p>
-        <p>
-          Iza nas su decenije uspešno završenih poslova i stotine zadovoljnih
-          klijenata. Sa ponosom možemo reći da smo zalaganjem i kvalitetom
-          izrade i ugradnje među vodećima u Novom Sadu.
+        <p className='mb-4'>
+          Sa ponosom možemo reći da smo zalaganjem i kvalitetom izrade i
+          ugradnje među vodećima u Novom Sadu.
         </p>
         <h2>Usluge</h2>
         <h3>Autogas (LPG)</h3>
