@@ -12,6 +12,7 @@ export default function GoogleMap() {
         // @ts-ignore
         allowFullScreen=''
         loading='lazy'
+        title='Our location on Google maps'
       ></iframe>
     </section>
   )
