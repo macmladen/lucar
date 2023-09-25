@@ -5,7 +5,7 @@ export default function Bottom() {
   return (
     <section id="bottom" className="">
       <div className="container flex flex-wrap gap-5 py-8 xl:flex-nowrap">
-        <div className="w-full min-w-[280px] md:flex-1">
+        <div className="w-full min-w-[280px] lg:flex-1">
           <h3 className="pb-2 text-xl font-black">O nama</h3>
           <hr className="pb-4" />
           <Logo />
