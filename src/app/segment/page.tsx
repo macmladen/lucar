@@ -4,25 +4,25 @@ import Gallery from '@/components/blocks/gallery'
 const meta = {
   title: 'Segmentna',
   description: 'Proizvodnja seg',
+  keywords: ['Segmentna vrata', 'Garažna vrata', 'Industrijska vrata'],
+  image: {
+    url: '/img/segment/garage-rolo-3.jpg',
+    alt: 'Lucar',
+  },
 }
 export const metadata = {
   title: meta.title,
   description: meta.description,
-  keywords: [
-    'Segmentna vrata',
-    'Rolo vrata',
-    'Komarnici',
-    'Pergole',
-    'Garažna vrata',
-    'Industrijska vrata',
-  ],
+  keywords: meta.keywords,
   openGraph: {
     title: meta.title,
     description: meta.description,
+    images: [meta.image],
   },
   twitter: {
     title: meta.title,
     description: meta.description,
+    images: [meta.image],
   },
 }
 

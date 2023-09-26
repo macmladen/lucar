@@ -98,6 +98,7 @@ export const metadata = {
     address: false,
     telephone: false,
   },
+  category: 'Service',
   metadataBase: new URL('https://lucar.rs'),
   openGraph: {
     title: 'Lucar | Autogas, Segmentna vrata, Pergola, Komarnici',
@@ -105,6 +106,12 @@ export const metadata = {
       'Ugradnja gasa u sve tipove vozila. Segmentna vrata, Pergola, Komarnici.',
     url: 'https://lucar.rs',
     siteName: 'Lucar',
+    images: [
+      {
+        url: '/img/about/lucar-house.jpg',
+        alt: 'Lucar SZTR',
+      },
+    ],
     locale: 'sr-Latn-RS',
     type: 'website',
   },
@@ -115,6 +122,23 @@ export const metadata = {
     // siteId: '1467726470533754880',
     creator: '@macmladen',
     // creatorId: '1467726470533754880',
+    images: {
+      url: '/img/about/lucar-house.jpg',
+      alt: 'Lucar SZTR',
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 }
 
