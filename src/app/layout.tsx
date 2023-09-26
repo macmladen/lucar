@@ -69,7 +69,7 @@ export const metadata = {
     default: 'Lucar | Autogas, Segmentna vrata, Pergola, Komarnici',
   },
   description:
-    'Ugradnja gasa u sve tipove vozila. Segmentna vrata, Pergola, Komarnici.',
+    'Ugradnja i servis TNG i CNG uređaja, segmentnih i rolo vrata, pergola i komarnika.',
   generator: 'Next.js',
   applicationName: 'Lucar',
   referrer: 'origin-when-cross-origin',
@@ -103,7 +103,7 @@ export const metadata = {
   openGraph: {
     title: 'Lucar | Autogas, Segmentna vrata, Pergola, Komarnici',
     description:
-      'Ugradnja gasa u sve tipove vozila. Segmentna vrata, Pergola, Komarnici.',
+      'Ugradnja i servis TNG i CNG uređaja, segmentnih i rolo vrata, pergola i komarnika.',
     url: 'https://lucar.rs',
     siteName: 'Lucar',
     images: [
@@ -118,7 +118,7 @@ export const metadata = {
   twitter: {
     title: 'Lucar | Autogas, Segmentna vrata, Pergola, Komarnici',
     description:
-      'Ugradnja gasa u sve tipove vozila. Segmentna vrata, Pergola, Komarnici.',
+      'Ugradnja i servis TNG i CNG uređaja, segmentnih i rolo vrata, pergola i komarnika.',
     // siteId: '1467726470533754880',
     creator: '@macmladen',
     // creatorId: '1467726470533754880',

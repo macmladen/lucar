@@ -1,5 +1,32 @@
 import Hero from '@/components/blocks/hero'
 
+const meta = {
+  title: 'Rolo vrata',
+  description: 'Izrada i ugradnja rolo vrata',
+  keywords: ['Rolo vrata', 'Garažna rolo vrata', 'Bezbednosna rolo vrata'],
+  image: {
+    url: '/img/rolo/rolo-1.jpg',
+    width: 1200,
+    height: 675,
+    alt: 'Rolo vrata',
+  },
+}
+export const metadata = {
+  title: meta.title,
+  description: meta.description,
+  keywords: meta.keywords,
+  openGraph: {
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
+  },
+  twitter: {
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
+  },
+}
+
 export default function RoloDoor() {
   const netPhotos = [
     { src: '/img/rolo/rolo.jpg', width: 800, height: 600 },

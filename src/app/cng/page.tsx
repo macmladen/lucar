@@ -1,6 +1,39 @@
 import Hero from '@/components/blocks/hero'
 import Gallery from '@/components/blocks/gallery'
 
+const meta = {
+  title: 'CNG Komprimovani prirodni gas',
+  description:
+    'Ugrađujemo CNG sisteme u vozila koja koriste benzin ili dizel kao primarni energent.',
+  keywords: [
+    'CNG',
+    'Ugradnja CNG uređaja',
+    'servis CNG uređaja',
+    'atest CNG uređaja',
+  ],
+  image: {
+    url: '/img/cng/cng.jpg',
+    width: 1200,
+    height: 675,
+    alt: 'Ugradnja i održavanje CNG uređaja',
+  },
+}
+export const metadata = {
+  title: meta.title,
+  description: meta.description,
+  keywords: meta.keywords,
+  openGraph: {
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
+  },
+  twitter: {
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
+  },
+}
+
 export default function Cng() {
   const ourWork = [
     { src: '/img/cng/cng-1.jpg', width: 800, height: 600 },

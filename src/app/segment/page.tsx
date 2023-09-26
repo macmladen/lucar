@@ -2,12 +2,15 @@ import Hero from '@/components/blocks/hero'
 import Gallery from '@/components/blocks/gallery'
 
 const meta = {
-  title: 'Segmentna',
-  description: 'Proizvodnja seg',
+  title: 'Segmentna industrijska i garažna vrata',
+  description:
+    'Izrađujemo i ugrađujemo segmentna industrijska i garažna vrata po meri.',
   keywords: ['Segmentna vrata', 'Garažna vrata', 'Industrijska vrata'],
   image: {
-    url: '/img/segment/garage-rolo-3.jpg',
-    alt: 'Lucar',
+    url: '/img/segment/garage-rolo-big-2a.jpg',
+    width: 1200,
+    height: 675,
+    alt: 'Segmentna vrata',
   },
 }
 export const metadata = {

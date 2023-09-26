@@ -1,6 +1,33 @@
 import Hero from '@/components/blocks/hero'
 import Gallery from '@/components/blocks/gallery'
 
+const meta = {
+  title: 'Pergole',
+  description: 'Izrada i ugradnja pergola koje su najbolja zaštita od sunca',
+  keywords: ['Pergole', 'Izrada pergola', 'Ugradnja pergola'],
+  image: {
+    url: '/img/pergola/pergola-3a.jpg',
+    width: 1200,
+    height: 675,
+    alt: 'Ugradnja i izrada pergola',
+  },
+}
+export const metadata = {
+  title: meta.title,
+  description: meta.description,
+  keywords: meta.keywords,
+  openGraph: {
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
+  },
+  twitter: {
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
+  },
+}
+
 export default function Pergola() {
   const ourWork = [
     { src: '/img/pergola/pergola-1a.jpg', width: 800, height: 600 },

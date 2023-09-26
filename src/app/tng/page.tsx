@@ -1,6 +1,40 @@
 import Hero from '@/components/blocks/hero'
 import Gallery from '@/components/blocks/gallery'
 
+const meta = {
+  title: 'TNG - Tečni naftni gas',
+  description:
+    'Ugrađujemo plinske sisteme u vozila koja koriste benzin ili dizel kao primarni energent.',
+  keywords: [
+    'TNG',
+    'LPG',
+    'Ugradnja gasnog uređaja',
+    'servis gasnog uređaja',
+    'atest gasnih uređaja',
+  ],
+  image: {
+    url: '/img/tng/tng.jpg',
+    width: 1200,
+    height: 675,
+    alt: 'Ugradnja i održavanje TNG uređaja',
+  },
+}
+export const metadata = {
+  title: meta.title,
+  description: meta.description,
+  keywords: meta.keywords,
+  openGraph: {
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
+  },
+  twitter: {
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
+  },
+}
+
 export default function Tng() {
   const ourWork = [{ src: '/img/tng/tng.jpg', width: 800, height: 600 }]
   return (

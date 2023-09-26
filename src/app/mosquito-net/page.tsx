@@ -1,6 +1,38 @@
 import Hero from '@/components/blocks/hero'
 import Gallery from '@/components/blocks/gallery'
 
+const meta = {
+  title: 'Komarnici',
+  description: 'Izrada i ugradnja plise, rolo i fiksnih komarnika.',
+  keywords: [
+    'Komarnici',
+    'Plise komarnici',
+    'Rolo komarnici',
+    'Fiksni komarnici',
+  ],
+  image: {
+    url: '/img/mosquitonet/mosquito-net-window-2.jpg',
+    width: 1200,
+    height: 675,
+    alt: 'Ugradnja i izrada komarnika',
+  },
+}
+export const metadata = {
+  title: meta.title,
+  description: meta.description,
+  keywords: meta.keywords,
+  openGraph: {
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
+  },
+  twitter: {
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
+  },
+}
+
 export default function MosquitoNet() {
   const ourWork = [
     {
