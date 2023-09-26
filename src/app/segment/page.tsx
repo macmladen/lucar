@@ -1,5 +1,5 @@
 import Hero from '@/components/blocks/hero'
-import GallerySegmented from '@/app/segment/gallery'
+import Gallery from '@/components/blocks/gallery'
 
 const meta = {
   title: 'Segmentna',
@@ -25,6 +25,43 @@ export const metadata = {
     description: meta.description,
   },
 }
+
+const ourWork = [
+  { src: '/img/segment/garage-rolo-1a.jpg', width: 800, height: 600 },
+  { src: '/img/segment/garage-rolo-1b.jpg', width: 800, height: 600 },
+  { src: '/img/segment/garage-rolo-2.jpg', width: 800, height: 600 },
+  { src: '/img/segment/garage-rolo-3.jpg', width: 800, height: 600 },
+  { src: '/img/segment/garage-rolo-4.jpg', width: 800, height: 600 },
+  { src: '/img/segment/garage-rolo-big-1a.jpg', width: 800, height: 600 },
+  { src: '/img/segment/garage-rolo-big-1b.jpg', width: 800, height: 600 },
+  { src: '/img/segment/garage-rolo-big-2a.jpg', width: 800, height: 600 },
+  { src: '/img/segment/garage-rolo-big-2b.jpg', width: 800, height: 600 },
+  { src: '/img/segment/garage-rolo-window.jpg', width: 800, height: 600 },
+]
+const netPhotos = [
+  { src: '/img/segment/garazna-industr1.jpg', width: 800, height: 600 },
+  { src: '/img/segment/garazna-industr2.jpg', width: 800, height: 600 },
+  { src: '/img/segment/garazna-oblici.png', width: 800, height: 600 },
+  { src: '/img/segment/garazna-segm4.jpg', width: 800, height: 600 },
+  {
+    src: '/img/segment/garazna-segmentna-vrata1.jpg',
+    width: 800,
+    height: 600,
+  },
+  {
+    src: '/img/segment/garazna-segmentna-vrata2.jpg',
+    width: 800,
+    height: 600,
+  },
+  {
+    src: '/img/segment/garazna-segmentna-vrata3.jpg',
+    width: 800,
+    height: 600,
+  },
+  { src: '/img/segment/garazna-tipovi.png', width: 800, height: 600 },
+  { src: '/img/segment/garazna-vrata.gif', width: 800, height: 600 },
+  { src: '/img/segment/garazna-vrata.jpg', width: 800, height: 600 },
+]
 
 export default function Segmented() {
   return (
@@ -150,7 +187,7 @@ export default function Segmented() {
         </p>
         <hr />
         <h2>Naši projekti</h2>
-        <GallerySegmented />
+        <Gallery ourWork={ourWork} netPhotos={netPhotos} />
       </article>
     </section>
   )

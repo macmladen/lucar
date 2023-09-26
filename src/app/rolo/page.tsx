@@ -1,6 +1,6 @@
 import Hero from '@/components/blocks/hero'
 
-export default function roloDoor() {
+export default function RoloDoor() {
   const netPhotos = [
     { src: '/img/rolo/rolo.jpg', width: 800, height: 600 },
     { src: '/img/rolo/rolo.webm', width: 800, height: 600 },
@@ -137,11 +137,7 @@ export default function roloDoor() {
           potrebama. Na raspolaganju su vam boje iz RAL karte.
         </p>
         <p>Rolo vrata možete poručiti sa i bez ugradnje.</p>
-        {/*
-        <hr />
-        <h2>Fotografije sa neta:</h2>
-        <PhotoAlbum layout='rows' photos={netPhotos} />
-*/}
+        {/*<Gallery ourWork={ourWork} netPhotos={netPhotos}/>*/}
       </article>
     </section>
   )

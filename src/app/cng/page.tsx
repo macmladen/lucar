@@ -1,15 +1,5 @@
-'use client'
 import Hero from '@/components/blocks/hero'
-import PhotoAlbum from 'react-photo-album'
-import { useState } from 'react'
-
-import Lightbox from 'yet-another-react-lightbox'
-import 'yet-another-react-lightbox/styles.css' // import optional lightbox plugins
-import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen'
-import Slideshow from 'yet-another-react-lightbox/plugins/slideshow'
-import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails'
-import Zoom from 'yet-another-react-lightbox/plugins/zoom'
-import 'yet-another-react-lightbox/plugins/thumbnails.css'
+import Gallery from '@/components/blocks/gallery'
 
 export default function Cng() {
   const ourWork = [
@@ -20,7 +10,6 @@ export default function Cng() {
       height: 600,
     },
   ]
-  const [index, setIndex] = useState(-1)
   return (
     <section id='cng'>
       <Hero
@@ -108,20 +97,7 @@ export default function Cng() {
         <p>Boce ne zahteva nikakvo održavanje.</p>
         <hr />
         <h2>Ugradnja CNG sistema</h2>
-        <PhotoAlbum
-          layout='rows'
-          photos={ourWork}
-          onClick={({ index }) => setIndex(index)}
-        />
-
-        <Lightbox
-          slides={ourWork}
-          open={index >= 0}
-          index={index}
-          close={() => setIndex(-1)}
-          // enable optional lightbox plugins
-          plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
-        />
+        <Gallery ourWork={ourWork} />
       </article>
     </section>
   )
