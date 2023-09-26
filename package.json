@@ -1,6 +1,6 @@
 {
   "name": "lucar",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Lucar new website based on Next.js.",
   "main": "index.js",
   "scripts": {

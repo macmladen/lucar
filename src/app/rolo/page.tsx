@@ -1,6 +1,33 @@
 import Hero from '@/components/blocks/hero'
 
-export default function roloDoor() {
+const meta = {
+  title: 'Rolo vrata',
+  description: 'Izrada i ugradnja rolo vrata',
+  keywords: ['Rolo vrata', 'Garažna rolo vrata', 'Bezbednosna rolo vrata'],
+  image: {
+    url: '/img/rolo/rolo-1.jpg',
+    width: 1200,
+    height: 675,
+    alt: 'Rolo vrata',
+  },
+}
+export const metadata = {
+  title: meta.title,
+  description: meta.description,
+  keywords: meta.keywords,
+  openGraph: {
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
+  },
+  twitter: {
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
+  },
+}
+
+export default function RoloDoor() {
   const netPhotos = [
     { src: '/img/rolo/rolo.jpg', width: 800, height: 600 },
     { src: '/img/rolo/rolo.webm', width: 800, height: 600 },
@@ -137,11 +164,7 @@ export default function roloDoor() {
           potrebama. Na raspolaganju su vam boje iz RAL karte.
         </p>
         <p>Rolo vrata možete poručiti sa i bez ugradnje.</p>
-        {/*
-        <hr />
-        <h2>Fotografije sa neta:</h2>
-        <PhotoAlbum layout='rows' photos={netPhotos} />
-*/}
+        {/*<Gallery ourWork={ourWork} netPhotos={netPhotos}/>*/}
       </article>
     </section>
   )

@@ -1,122 +1,141 @@
-"use client";
-import Hero from "@/components/blocks/hero";
-import PhotoAlbum from "react-photo-album";
-import { useState } from "react";
+import Hero from '@/components/blocks/hero'
+import Gallery from '@/components/blocks/gallery'
 
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-
-// import optional lightbox plugins
-import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import "yet-another-react-lightbox/plugins/thumbnails.css";
+const meta = {
+  title: 'Komarnici',
+  description: 'Izrada i ugradnja plise, rolo i fiksnih komarnika.',
+  keywords: [
+    'Komarnici',
+    'Plise komarnici',
+    'Rolo komarnici',
+    'Fiksni komarnici',
+  ],
+  image: {
+    url: '/img/mosquitonet/mosquito-net-window-2.jpg',
+    width: 1200,
+    height: 675,
+    alt: 'Ugradnja i izrada komarnika',
+  },
+}
+export const metadata = {
+  title: meta.title,
+  description: meta.description,
+  keywords: meta.keywords,
+  openGraph: {
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
+  },
+  twitter: {
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
+  },
+}
 
 export default function MosquitoNet() {
   const ourWork = [
     {
-      src: "/img/mosquitonet/mosquito-net-balcony.jpg",
+      src: '/img/mosquitonet/mosquito-net-balcony.jpg',
       width: 800,
-      height: 600
+      height: 600,
     },
     {
-      src: "/img/mosquitonet/mosquito-net-door-1.jpg",
+      src: '/img/mosquitonet/mosquito-net-door-1.jpg',
       width: 800,
-      height: 600
+      height: 600,
     },
     {
-      src: "/img/mosquitonet/mosquito-net-door-2a.jpg",
+      src: '/img/mosquitonet/mosquito-net-door-2a.jpg',
       width: 800,
-      height: 600
+      height: 600,
     },
     {
-      src: "/img/mosquitonet/mosquito-net-door-2b.jpg",
+      src: '/img/mosquitonet/mosquito-net-door-2b.jpg',
       width: 800,
-      height: 600
+      height: 600,
     },
     {
-      src: "/img/mosquitonet/mosquito-net-window-1.jpg",
+      src: '/img/mosquitonet/mosquito-net-window-1.jpg',
       width: 800,
-      height: 600
+      height: 600,
     },
     {
-      src: "/img/mosquitonet/mosquito-net-window-2.jpg",
+      src: '/img/mosquitonet/mosquito-net-window-2.jpg',
       width: 800,
-      height: 600
+      height: 600,
     },
     {
-      src: "/img/mosquitonet/mosquito-net-pool-1.jpg",
+      src: '/img/mosquitonet/mosquito-net-pool-1.jpg',
       width: 800,
-      height: 600
+      height: 600,
     },
     {
-      src: "/img/mosquitonet/mosquito-net-pool-2.jpg",
+      src: '/img/mosquitonet/mosquito-net-pool-2.jpg',
       width: 800,
-      height: 600
+      height: 600,
     },
     {
-      src: "/img/mosquitonet/mosquito-net-pool-3.jpg",
+      src: '/img/mosquitonet/mosquito-net-pool-3.jpg',
       width: 800,
-      height: 600
+      height: 600,
     },
     {
-      src: "/img/mosquitonet/mosquito-net-pool-4.jpg",
+      src: '/img/mosquitonet/mosquito-net-pool-4.jpg',
       width: 800,
-      height: 600
-    }
-  ];
+      height: 600,
+    },
+  ]
   const netPhotos = [
-    { src: "/img/mosquitonet/komarnici-fixed-1.jpg", width: 800, height: 600 },
-    { src: "/img/mosquitonet/komarnici-fixed-2.jpg", width: 800, height: 600 },
-    { src: "/img/mosquitonet/komarnici-fixed-3.jpg", width: 800, height: 600 },
+    { src: '/img/mosquitonet/komarnici-fixed-1.jpg', width: 800, height: 600 },
+    { src: '/img/mosquitonet/komarnici-fixed-2.jpg', width: 800, height: 600 },
+    { src: '/img/mosquitonet/komarnici-fixed-3.jpg', width: 800, height: 600 },
     {
-      src: "/img/mosquitonet/komarnici-fixed-door-plisse-1.jpg",
+      src: '/img/mosquitonet/komarnici-fixed-door-plisse-1.jpg',
       width: 800,
-      height: 600
+      height: 600,
     },
     {
-      src: "/img/mosquitonet/komarnici-fixed-door-plisse-2.jpg",
+      src: '/img/mosquitonet/komarnici-fixed-door-plisse-2.jpg',
       width: 800,
-      height: 600
+      height: 600,
     },
     {
-      src: "/img/mosquitonet/komarnici-fixed-door-plisse-3.jpeg",
+      src: '/img/mosquitonet/komarnici-fixed-door-plisse-3.jpeg',
       width: 800,
-      height: 600
+      height: 600,
     },
     {
-      src: "/img/mosquitonet/komarnici-fixed-door-plisse-4.jpg",
+      src: '/img/mosquitonet/komarnici-fixed-door-plisse-4.jpg',
       width: 800,
-      height: 600
+      height: 600,
     },
     {
-      src: "/img/mosquitonet/komarnici-fixed-hinge.jpg",
+      src: '/img/mosquitonet/komarnici-fixed-hinge.jpg',
       width: 800,
-      height: 600
+      height: 600,
     },
     {
-      src: "/img/mosquitonet/komarnici-fixed-window-plisse-1.jpg",
+      src: '/img/mosquitonet/komarnici-fixed-window-plisse-1.jpg',
       width: 800,
-      height: 600
+      height: 600,
     },
-    { src: "/img/mosquitonet/komarnici-rolo-1.jpg", width: 800, height: 600 },
-    { src: "/img/mosquitonet/komarnici-rolo-1.png", width: 800, height: 600 },
-    { src: "/img/mosquitonet/komarnici-rolo-2.jpg", width: 800, height: 600 }
-  ];
-  const [index, setIndex] = useState(-1);
+    { src: '/img/mosquitonet/komarnici-rolo-1.jpg', width: 800, height: 600 },
+    { src: '/img/mosquitonet/komarnici-rolo-1.png', width: 800, height: 600 },
+    { src: '/img/mosquitonet/komarnici-rolo-2.jpg', width: 800, height: 600 },
+  ]
   return (
-    <section id="mosquito-net">
+    <section id='mosquito-net'>
       <Hero
-        title="Komarnici"
-        subtitle="Plise, rolo i fiksni"
-        image="/img/mosquitonet/mosquito-net-window-2.jpg"
+        title='Komarnici'
+        subtitle='Plise, rolo i fiksni'
+        image='/img/mosquitonet/mosquito-net-window-2.jpg'
       />
-      <article className="container prose my-20 dark:prose-invert">
+      <article className='container prose my-20 dark:prose-invert'>
         <h2>Zašto komarnici</h2>
         <p>
           Komarnici su ekološka i trajna zaštita od svih insekata. Vrlo su
-          praktični i gotovo neprimetni u Vašem prostoru.{" "}
+          praktični i gotovo neprimetni u Vašem prostoru.{' '}
         </p>
         <p>
           Već dugi niz godina za svoje klijente ugrađujemo komarnike po meri.
@@ -135,8 +154,8 @@ export default function MosquitoNet() {
           balkonska vrata, naš stručni tim će vam pomoći u izboru! Dolazak na
           adresu radi uzimanja mera i montaža komarnika su BESPLATNI!
         </p>
-        <video autoPlay loop controls width="360" height="480">
-          <source src="/img/mosquitonet/mosquito-net-door.mp4" />
+        <video autoPlay loop controls width='360' height='480'>
+          <source src='/img/mosquitonet/mosquito-net-door.mp4' />
         </video>
         <h2>Plise komarnici</h2>
         <p>
@@ -175,7 +194,7 @@ export default function MosquitoNet() {
         <p>
           Cena plise komarnika zavisi pre svega od dimenizja otvora, ali i od
           toga da li su vam potrebni jednodelni, dvodelni ili slim-plise
-          komarnici.{" "}
+          komarnici.{' '}
         </p>
         <h2>Rolo komarnici </h2>
         <p>
@@ -200,12 +219,12 @@ export default function MosquitoNet() {
           otvaranja rolo komarnika je horizontalno i vertikalno. Vrlo je važno
           naglasiti da mrežica ni na koji način ne sprečava ulazak svetlosti i
           svežeg vazduha u prostor, a dizajn rolo komarnika omogućava
-          funkcionalnost i privlačan estetski izgled prozora ili vrata.{" "}
+          funkcionalnost i privlačan estetski izgled prozora ili vrata.{' '}
         </p>
         <p>
           Delovi rolo komarnika su i kutija i stubovi, koji se prave od
           aluminijuma, i on se najčešće plastificira u belu, braon ili sivu
-          nijansu.{" "}
+          nijansu.{' '}
         </p>
         <p>
           Rolo komarnicima se lako rukuje, montaža je takođe jednostavan
@@ -258,30 +277,12 @@ export default function MosquitoNet() {
         <p>
           Posebnu podvrstu panelnih komarnika predstavlja Američki komarnik –
           koji je ceo pričvršćen za ram a ima mehanizam za otvaranje, tako da je
-          dobar izbor za spoljna vrata i terase.{" "}
+          dobar izbor za spoljna vrata i terase.{' '}
         </p>
         <hr />
         <h2>Naši projekti</h2>
-        <PhotoAlbum
-          layout="rows"
-          photos={ourWork}
-          onClick={({ index }) => setIndex(index)}
-        />
-
-        <Lightbox
-          slides={ourWork}
-          open={index >= 0}
-          index={index}
-          close={() => setIndex(-1)}
-          // enable optional lightbox plugins
-          plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
-        />
-        {/*
-        <hr />
-        <h2>Fotografije sa neta:</h2>
-        <PhotoAlbum layout='rows' photos={netPhotos} />
-*/}
+        <Gallery ourWork={ourWork} netPhotos={netPhotos} />
       </article>
     </section>
-  );
+  )
 }

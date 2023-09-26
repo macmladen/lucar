@@ -1,15 +1,32 @@
-'use client'
 import Hero from '@/components/blocks/hero'
-import PhotoAlbum from 'react-photo-album'
-import { useState } from 'react'
+import Gallery from '@/components/blocks/gallery'
 
-import Lightbox from 'yet-another-react-lightbox'
-import 'yet-another-react-lightbox/styles.css' // import optional lightbox plugins
-import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen'
-import Slideshow from 'yet-another-react-lightbox/plugins/slideshow'
-import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails'
-import Zoom from 'yet-another-react-lightbox/plugins/zoom'
-import 'yet-another-react-lightbox/plugins/thumbnails.css'
+const meta = {
+  title: 'Pergole',
+  description: 'Izrada i ugradnja pergola koje su najbolja zaštita od sunca',
+  keywords: ['Pergole', 'Izrada pergola', 'Ugradnja pergola'],
+  image: {
+    url: '/img/pergola/pergola-3a.jpg',
+    width: 1200,
+    height: 675,
+    alt: 'Ugradnja i izrada pergola',
+  },
+}
+export const metadata = {
+  title: meta.title,
+  description: meta.description,
+  keywords: meta.keywords,
+  openGraph: {
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
+  },
+  twitter: {
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
+  },
+}
 
 export default function Pergola() {
   const ourWork = [
@@ -72,7 +89,6 @@ export default function Pergola() {
       height: 600,
     },
   ]
-  const [index, setIndex] = useState(-1)
 
   return (
     <section id='pergola'>
@@ -177,25 +193,7 @@ export default function Pergola() {
         </p>
         <hr />
         <h2>Naši projekti</h2>
-        <PhotoAlbum
-          layout='rows'
-          photos={ourWork}
-          onClick={({ index }) => setIndex(index)}
-        />
-
-        <Lightbox
-          slides={ourWork}
-          open={index >= 0}
-          index={index}
-          close={() => setIndex(-1)}
-          // enable optional lightbox plugins
-          plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
-        />
-        {/*
-        <hr />
-        <h2>Fotografije sa neta:</h2>
-        <PhotoAlbum layout='rows' photos={netPhotos} />
-*/}
+        <Gallery ourWork={ourWork} netPhotos={netPhotos} />
       </article>
     </section>
   )

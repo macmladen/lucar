@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Hero from '@/components/blocks/hero'
-import PhotoAlbum from 'react-photo-album'
-import 'yet-another-react-lightbox/plugins/thumbnails.css'
+import Gallery from '@/components/blocks/gallery'
 
 export default function About() {
   const ourWork = [
@@ -11,7 +10,7 @@ export default function About() {
     <section id='about'>
       <Hero
         title='SZTR Lucar'
-        subtitle='Ugradnja i servis TNG, CNG, segmentnih, rolo vrata i komarnika'
+        subtitle='Ugradnja i servis TNG i CNG uređaja, segmentnih i rolo vrata, pergola i komarnika.'
         image='/img/about/lucar-house.jpg'
       />
       <article className='container prose my-20 dark:prose-invert'>
@@ -70,7 +69,7 @@ export default function About() {
           međusobno povezani... <Link href='/segment'>Detaljnije</Link>
         </p>
         <hr />
-        <PhotoAlbum layout='rows' photos={ourWork} />
+        <Gallery ourWork={ourWork} />
       </article>
     </section>
   )

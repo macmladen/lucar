@@ -1,15 +1,38 @@
-'use client'
 import Hero from '@/components/blocks/hero'
-import PhotoAlbum from 'react-photo-album'
-import { useState } from 'react'
+import Gallery from '@/components/blocks/gallery'
 
-import Lightbox from 'yet-another-react-lightbox'
-import 'yet-another-react-lightbox/styles.css' // import optional lightbox plugins
-import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen'
-import Slideshow from 'yet-another-react-lightbox/plugins/slideshow'
-import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails'
-import Zoom from 'yet-another-react-lightbox/plugins/zoom'
-import 'yet-another-react-lightbox/plugins/thumbnails.css'
+const meta = {
+  title: 'CNG Komprimovani prirodni gas',
+  description:
+    'Ugrađujemo CNG sisteme u vozila koja koriste benzin ili dizel kao primarni energent.',
+  keywords: [
+    'CNG',
+    'Ugradnja CNG uređaja',
+    'servis CNG uređaja',
+    'atest CNG uređaja',
+  ],
+  image: {
+    url: '/img/cng/cng.jpg',
+    width: 1200,
+    height: 675,
+    alt: 'Ugradnja i održavanje CNG uređaja',
+  },
+}
+export const metadata = {
+  title: meta.title,
+  description: meta.description,
+  keywords: meta.keywords,
+  openGraph: {
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
+  },
+  twitter: {
+    title: meta.title,
+    description: meta.description,
+    images: [meta.image],
+  },
+}
 
 export default function Cng() {
   const ourWork = [
@@ -20,7 +43,6 @@ export default function Cng() {
       height: 600,
     },
   ]
-  const [index, setIndex] = useState(-1)
   return (
     <section id='cng'>
       <Hero
@@ -108,20 +130,7 @@ export default function Cng() {
         <p>Boce ne zahteva nikakvo održavanje.</p>
         <hr />
         <h2>Ugradnja CNG sistema</h2>
-        <PhotoAlbum
-          layout='rows'
-          photos={ourWork}
-          onClick={({ index }) => setIndex(index)}
-        />
-
-        <Lightbox
-          slides={ourWork}
-          open={index >= 0}
-          index={index}
-          close={() => setIndex(-1)}
-          // enable optional lightbox plugins
-          plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
-        />
+        <Gallery ourWork={ourWork} />
       </article>
     </section>
   )
